@@ -6904,7 +6904,6 @@ hr {
 .newsletter-form .subscribe-form-wrapper .subscribe-form .subscribe-submit .btn {
   background: #fff;
   color: #5fb7cf;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
   border: none;
   font-size: 26px;
@@ -7106,7 +7105,6 @@ a.navbar-brand {
   font-size: 1.4em;
   border: none;
   cursor: pointer;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 }
 .btn-primary:hover {
@@ -7230,7 +7228,6 @@ a.navbar-brand {
   color: #fff;
   width: 24px;
   height: 24px;
-  -webkit-border-radius: 12px;
   border-radius: 12px;
   text-align: center;
   font-size: 14px;
@@ -7251,7 +7248,6 @@ a.navbar-brand {
   padding-left: 0px;
   padding-right: 0px;
   border: 1px solid #e6e6e6;
-  -webkit-border-radius: 6px;
   border-radius: 6px;
   margin-top: 10px;
   padding-bottom: 20px;
