@@ -13,13 +13,13 @@ keystone.init({
 
 	'name': 'Craft Shop',
 	'brand': 'Craft Shop',
-	
+
 	'stylus': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
-	'view engine': 'jade',
-	
+	'view engine': 'pug',
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
