@@ -4,15 +4,13 @@ import Navigation from './components/Navigation';
 
 const Index = (props) => {
   return (
-    <div>
-      <div id="header">
-        <div class="container no-padding">
-          <Navigation props={props}></Navigation>
-        </div>
+    <div id="body">
+      <div id="header" className="container no-padding">
+        <Navigation props={props}></Navigation>
       </div>
       <Landing></Landing>
     </div>
   )
 }
 
-export default Index;
+module.exports = Index;

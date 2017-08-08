@@ -2,31 +2,31 @@ import React, {Component} from 'react';
 
 const Navigation = ({props}) => {
   return (
-    <div class="navbar navbar-default" role="navigation">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <div className="navbar navbar-default" role="navigation">
+      <div className="navbar-header">
+        <button className="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <span className="sr-only">Toggle navigation</span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">{props.section}</a>
+        <a className="navbar-brand" href="/"></a>
       </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav navbar-left">
+      <div className="collapse navbar-collapse">
+        <ul className="nav navbar-nav navbar-left">
           {
             props.navLinks.map((link) => (
-              <li key={link.key} class={props.section == link.key ? 'active' : null}>
+              <li key={link.key} className={props.section == link.key ? 'active' : null}>
                 <a href={link.href}>{link.label}</a>
               </li>
             ))
           }
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul className="nav navbar-nav navbar-right">
           <li>
-            <a class="shopping-cart" href="/cart">
-              <div class="shopping-cart-label">Basket</div>
-              <div class="shopping-cart-count"></div>
+            <a className="shopping-cart" href="/cart">
+              <div className="shopping-cart-label">Basket</div>
+              <div className="shopping-cart-count"></div>
             </a>
           </li>
         </ul>

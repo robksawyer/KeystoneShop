@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-const App = ({props}) => {
+const App = (props) => {
   return (
     <html>
       <head>
-        <title>{props.title}</title>
+        <title>{props.props.title}</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,24 +15,23 @@ const App = ({props}) => {
       </head>
       <body>
           <div id='view' dangerouslySetInnerHTML={{__html: props.body}} />
-          <div class="container">
-            <div id="footer">
-              <ul class="nav">
-                {
-                  props.navLinks.map((link) => (
-                    <li key={link.key} class={props.section == link.key ? 'active' : null}>
-                      <a href={link.href}>{link.label}</a>
-                    </li>
-                  ))
-                }
-              </ul>
-              <p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
-            </div>
+          {/* <script type='application/json' dangerouslySetInnerHTML={{__html: JSON.stringify(props.props)}} /> */}
+          <div className="container" id="footer">
+            <ul className="nav">
+              {
+                props.props.navLinks.map((link) => (
+                  <li key={link.key} className={props.props.section == link.key ? 'active' : null}>
+                    <a href={link.href}>{link.label}</a>
+                  </li>
+                ))
+              }
+            </ul>
+            <p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
           </div>
           <script type="text/javascript" src="/js/jquery/jquery-1.11.3.min.js"></script>
           <script type="text/javascript" src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
           {
-            props.user && props.user.canAccessKeystone (
+            props.props.user && props.props.user.canAccessKeystone (
               <script type="text/javascript" src="/keystone/js/content/editor.js"></script>
             )
           }
@@ -42,4 +41,4 @@ const App = ({props}) => {
   )
 }
 
-export default App;
+module.exports = App;

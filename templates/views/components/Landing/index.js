@@ -1,3 +1,3 @@
 import Landing from './Landing.jsx';
 
-module.exports = Landing;
+export default Landing;
