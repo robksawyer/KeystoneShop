@@ -10,7 +10,6 @@ exports = module.exports = function(req, res) {
 	// item in the header navigation.
 	locals.section = 'home';
 
-	// Render the view
+	// Render the Index.jsx view
 	view.render('Index', locals);
-
 };

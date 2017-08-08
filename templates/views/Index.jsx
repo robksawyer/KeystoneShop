@@ -1,9 +1,18 @@
 import React, {Component} from 'react';
+import Landing from './components/Landing';
+import Navigation from './components/Navigation';
 
-const Page = (props) => {
+const Index = (props) => {
   return (
-    <div>Hello world (from {props.section})!</div>
+    <div>
+      <div id="header">
+        <div class="container no-padding">
+          <Navigation props={props}></Navigation>
+        </div>
+      </div>
+      <Landing></Landing>
+    </div>
   )
 }
 
-module.exports = Page;
+export default Index;
