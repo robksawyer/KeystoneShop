@@ -1,4 +1,5 @@
 include ../mixins/flash-messages
+include ../mixins/newsletter-form
 
 doctype html
 html
@@ -67,26 +68,16 @@ html
 			//- Remember to include it in your templates when you override the intro and content blocks!
 
 			//- The Intro block appears above flash messages (used for temporary information display)
-			block intro
+			//- block intro
 
 			//- Flash messages allow you to display once-off status messages to users, e.g. form
 			//- validation errors, success messages, etc.
-			+flash-messages(messages)
+			//- +flash-messages(messages)
 
 			//- The content block should contain the body of your template's content
-			block content
+			//- block content
 
-		.container-fluid.newsletter-form
-			.container
-				.row: .call-to-action
-					p Subscribe to our newsletter
-				
-				.row: .subscribe-form-wrapper
-					.subscribe-form
-						.subscribe-field
-							input(type='text', placeholder='Email address')
-						.subscribe-submit
-							button.btn Submit
+		+newsletter-form()
 
 		//- FOOTER
 		.container: #footer

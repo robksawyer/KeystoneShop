@@ -12,6 +12,7 @@ if (process.env.NODE_ENV === 'production'){
 // Require keystone
 var keystone = require('keystone');
 var pkg = require('./package.json');
+var ReactEngine = require('express-react-engine');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -36,7 +37,10 @@ keystone.init({
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
-	'view engine': 'pug',
+	'view engine': 'jsx',
+	'custom engine': ReactEngine({
+		wrapper: 'App.jsx'
+	}),
 
 	'emails': 'templates/emails',
 	// 'admin path': 'admin',
