@@ -54,8 +54,8 @@ gulp.task('watch:stylus', function () {
 gulp.task('stylus', function () {
 	gulp.src(paths.style.main)
 		.pipe(stylus({
-      use: nib()
-    }))
+			use: nib()
+		}))
 		.pipe(gulp.dest(paths.style.output));
 });
 
@@ -63,63 +63,66 @@ gulp.task('stylus', function () {
 gulp.task('runKeystone', shell.task('node keystone.js'));
 gulp.task('watch', [
 
-  'watch:stylus',
+	'watch:stylus',
 
-  'watch:lint'
+	'watch:lint'
 ]);
 
 // Watchify
 gulp.task('watchify', function () {
-    var args = merge(watchify.args, { debug: true })
-    var bundler = watchify(browserify('.' + jsxPath + '/cart.jsx', args)).transform(babelify, { presets: ['es2015', 'react'] })
-    bundle_js(bundler)
+		var args = merge(watchify.args, { debug: true })
+		var bundler = watchify(
+			browserify('.' + jsxPath + '/cart.jsx', args))
+			.transform(
+				babelify, { presets: ['es2015', 'react'] }
+			)
+		bundle_js(bundler)
 
-    bundler.on('update', function () {
-        bundle_js(bundler)
-    })
+		bundler.on('update', function () {
+				bundle_js(bundler)
+		})
 })
 
 function bundle_js(bundler) {
-  return bundler.bundle()
-    .on('error', map_error)
-    .pipe(source('cart.js'))
-    .pipe(buffer())
-    .pipe(gulp.dest(publicJS))
-    .pipe(rename('cart.min.js'))
-    .pipe(sourcemaps.init({ loadMaps: true }))
-      // capture sourcemaps from transforms
-      .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(publicJS))
+	return bundler.bundle()
+		.on('error', map_error)
+		.pipe(source('cart.js'))
+		.pipe(buffer())
+		.pipe(gulp.dest(publicJS))
+		.pipe(rename('cart.min.js'))
+		.pipe(sourcemaps.init({ loadMaps: true }))
+			// capture sourcemaps from transforms
+			.pipe(uglify())
+		.pipe(sourcemaps.write('.'))
+		.pipe(gulp.dest(publicJS))
 }
 
 // Color errors with chalk
 function map_error(err) {
-  if (err.fileName) {
-    // regular error
-    gutil.log(chalk.red(err.name)
-      + ': '
-      + chalk.yellow(err.fileName.replace(__dirname + jsxPath + '/', ''))
-      + ': '
-      + 'Line '
-      + chalk.magenta(err.lineNumber)
-      + ' & '
-      + 'Column '
-      + chalk.magenta(err.columnNumber || err.column)
-      + ': '
-      + chalk.blue(err.description))
-  } else {
-    // browserify error..
-    gutil.log(chalk.red(err.name)
-      + ': '
-      + chalk.yellow(err.message))
-  }
+	if (err.fileName) {
+		// regular error
+		gutil.log(chalk.red(err.name)
+			+ ': '
+			+ chalk.yellow(err.fileName.replace(__dirname + jsxPath + '/', ''))
+			+ ': '
+			+ 'Line '
+			+ chalk.magenta(err.lineNumber)
+			+ ' & '
+			+ 'Column '
+			+ chalk.magenta(err.columnNumber || err.column)
+			+ ': '
+			+ chalk.blue(err.description))
+	} else {
+		// browserify error..
+		gutil.log(chalk.red(err.name)
+			+ ': '
+			+ chalk.yellow(err.message))
+	}
 
-  if (this.end) {
-      this.end()
-  }
+	if (this.end) {
+			this.end()
+	}
 }
 
 
 gulp.task('default', ['watch', 'watchify', 'runKeystone']);
-
