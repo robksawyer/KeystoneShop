@@ -1,4 +1,6 @@
 import React from 'react';
+import NumberFormat from 'react-number-format';
+
 import './product';
 
 const Product = ({props}) => {
@@ -22,7 +24,7 @@ const Product = ({props}) => {
           </div>
           <div className="store-content">
             <div className="col-sm-7">
-              { product.image.exists (
+              { product.image (
                 <div className="image-wrap">
                   <img src={product._.image.fit(750,450)} className="img-responsive" />
                 </div>
@@ -32,12 +34,12 @@ const Product = ({props}) => {
               <h1>{product.title}</h1>
               <p>{product.description}</p>
               <div className="product-price-product">
-                {numeral(product.price).format('$0.00')}
+                {
+                  <NumberFormat hintText="0.00" value={product.price} displayType={'text'} thousandSeparator={true} prefix={'$'} />
+                }
               </div>
               <div id="addToCart" style='margin-top:10px;'>
-                <div className="btn-text">
-                  Add to Cart
-                </div>
+                <div className="btn-text">Add to Cart</div>
                 <div className="btn-count"></div>
               </div>
             </div>

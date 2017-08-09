@@ -19,6 +19,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-express-middleware": "^3.0.0",
+    "react-number-format": "^2.0.3",
     "stripe": "^4.1.0",
     "stylus": "^0.53.0",
     "superagent": "^1.6.1",
