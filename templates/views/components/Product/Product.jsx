@@ -3,8 +3,11 @@ import NumberFormat from 'react-number-format';
 
 import './product';
 
-const Product = ({props}) => {
-  let product = data.product;
+const Product = (props) => {
+
+  let {data} = props;
+  let {product} = props.data;
+
   return (
     <div className="container store-container">
       {!product ? (
