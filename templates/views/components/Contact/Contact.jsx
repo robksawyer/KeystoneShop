@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Contact = ({props}) => {
+const Contact = (props) => {
+
+  let {enquirySubmitted, validationErrors, formData, enquiryTypes} = props;
+
   return (
     <div>
       <div className="container">
@@ -28,11 +31,13 @@ const Contact = ({props}) => {
                 </div>
                 <div className={validationErrors.enquiryType ? 'form-group has-error' : 'form-group' }>
                   <label>What are you contacting us about?</label>
-                  <select type='text' name='enquiryType' value={formData['name.email']} className="form-control">
-                    <option value=''>(select one)</option>
-                    { enquiryTypes.map((type) =>(
-                      <option value={type.value} selected={formData.enquiryType == type.value}>{type.label}</option>
-                    ))}
+                  <select type='text' name='enquiryType' value={formData['name.email']} defaultValue={formData.enquiryType} className="form-control">
+                    <option value='' key='empty'>(select one)</option>
+                    {
+                      enquiryTypes.map((type) =>(
+                        <option key={type.value.toString()} value={type.value}>{type.label}</option>
+                      ))
+                    }
                   </select>
                 </div>
                 <div className={validationErrors.message ? 'form-group has-error' : 'form-group' }>
