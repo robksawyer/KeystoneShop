@@ -37,7 +37,7 @@ keystone.init({
 	'stylus': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
-	'views': 'templates/views',
+	'views': 'templates/views/components',
 	'view engine': 'jsx',
 	'custom engine': ReactEngine({
 		wrapper: 'App.jsx'

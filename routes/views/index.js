@@ -1,5 +1,4 @@
 var keystone = require('keystone');
-var ReactComponent = require('../../templates/views/App.jsx');
 
 exports = module.exports = function(req, res) {
 
@@ -11,5 +10,5 @@ exports = module.exports = function(req, res) {
 	locals.section = 'home';
 
 	// Render the Index.jsx view
-	view.render('Index', locals);
+	view.render('../Index', locals);
 };
