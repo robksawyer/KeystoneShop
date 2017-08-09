@@ -3,10 +3,10 @@ var async = require('async');
 var numeral = require('numeral');
 
 exports = module.exports = function(req, res) {
-	
+
 	var view = new keystone.View(req, res);
 	var locals = res.locals;
-	
+
 	// Init locals
 	locals.section = 'store';
 	locals.numeral = numeral;
@@ -17,31 +17,31 @@ exports = module.exports = function(req, res) {
 		products: [],
 		categories: []
 	};
-	
+
 	// Load all categories
 	view.on('init', function(next) {
-		
+
 		keystone.list('ProductCategory').model.find().where('primary', true).sort('name').populate('categories').exec(function(err, results) {
-			
+
 			if (err || !results.length) {
 				return next(err);
 			}
 
 			locals.data.categories = results;
-			
+
 			// Load the counts for each category
 			async.each(locals.data.categories, function(category, next) {
 				keystone.list('Product').model.count().where('categories').in([category.id]).exec(function(err, count) {
 					category.productCount = count;
 					next(err);
 				});
-				
+
 			}, function(err) {
 				next(err);
 			});
-			
+
 		});
-		
+
 	});
 
 	// Load the current category filter
@@ -54,12 +54,12 @@ exports = module.exports = function(req, res) {
 		} else {
 			next();
 		}
-		
+
 	});
 
 	// Load the products
 	view.on('init', function(next) {
-		
+
 		var q = keystone.list('Product').paginate({
 				page: req.query.page || 1,
 				perPage: 13,
@@ -67,7 +67,7 @@ exports = module.exports = function(req, res) {
 			})
 			.sort('title')
 			// ≈;
-		
+
 		if (locals.data.category) {
 			var inCategories = [locals.data.category]
 
@@ -79,18 +79,18 @@ exports = module.exports = function(req, res) {
 
 			q.where('categories').in(inCategories);
 		}
-		
+
 		q.exec(function(err, results) {
 			console.log('Got results')
 			console.log(results)
-			
+
 			locals.data.products = results;
 			next(err);
 		});
-		
+
 	});
-	
+
 	// Render the view
-	view.render('products');
-	
+	view.render('Products');
+
 };
