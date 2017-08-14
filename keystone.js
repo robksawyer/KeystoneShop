@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
 require('dotenv').load();
@@ -13,7 +12,15 @@ if (process.env.NODE_ENV === 'production'){
 // Require keystone
 var keystone = require('keystone');
 var pkg = require('./package.json');
-var ReactEngine = require('express-react-engine');
+var renderer = require('express-react-engine');
+
+var engine = renderer.server.create({
+	performanceCollector: function(stats) {
+		console.log(stats);
+	},
+	// your options here
+});
+
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -39,12 +46,11 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views/components',
 	'view engine': 'jsx',
-	'custom engine': ReactEngine({
-		wrapper: 'App.jsx'
-	}),
+	'custom engine': engine,
+	'view': renderer.expressView,
 
 	'emails': 'templates/emails',
-	// 'admin path': 'admin',
+	'admin path': 'admin',
 	'mongo': mongo_url,
 	// 'signin logo': ['/images/logo.svg', 120],
 

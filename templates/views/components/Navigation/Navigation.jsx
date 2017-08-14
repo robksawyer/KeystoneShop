@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 const Navigation = ({props}) => {
+
+  let {navLinks, section} = props;
+
   return (
     <div className="navbar navbar-default" role="navigation">
       <div className="navbar-header">
@@ -15,8 +18,8 @@ const Navigation = ({props}) => {
       <div className="collapse navbar-collapse">
         <ul className="nav navbar-nav navbar-left">
           {
-            props.navLinks.map((link) => (
-              <li key={link.key} className={props.section == link.key ? 'active' : null}>
+            navLinks.map((link) => (
+              <li key={link.key} className={section == link.key ? 'active' : null}>
                 <a href={link.href}>{link.label}</a>
               </li>
             ))

@@ -9,6 +9,8 @@ exports = module.exports = function(req, res) {
 	// item in the header navigation.
 	locals.section = 'home';
 
+	locals.stripeApiKey = keystone.get('stripe publishable key');
+
 	// Render the Index.jsx view
 	view.render('../Index', locals);
 };

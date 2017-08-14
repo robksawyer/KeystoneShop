@@ -1,6 +1,6 @@
 import React from 'react';
 
-const 404 = () => {
+const e404 = () => {
   return (
     <div class="container">
       <h1>404</h1>
@@ -9,4 +9,4 @@ const 404 = () => {
   )
 }
 
-export default 404;
+export default e404;

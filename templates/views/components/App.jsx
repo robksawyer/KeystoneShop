@@ -16,18 +16,7 @@ const App = (props) => {
       <body>
           <div id='view' dangerouslySetInnerHTML={{__html: props.body}} />
           {/* <script type='application/json' dangerouslySetInnerHTML={{__html: JSON.stringify(props.props)}} /> */}
-          <div className="container" id="footer">
-            <ul className="nav">
-              {
-                props.props.navLinks.map((link) => (
-                  <li key={link.key} className={props.props.section == link.key ? 'active' : null}>
-                    <a href={link.href}>{link.label}</a>
-                  </li>
-                ))
-              }
-            </ul>
-            <p>Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.</p>
-          </div>
+          <Footer props={props.props} />
           <script type="text/javascript" src="/js/jquery/jquery-1.11.3.min.js"></script>
           <script type="text/javascript" src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
           {

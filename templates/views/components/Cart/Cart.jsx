@@ -1,15 +1,15 @@
-import React from 'react';
-import loadScript from 'helpers/load-script';
+import React, {Component} from 'react';
+// import loadScript from 'helpers/load-script';
 
-const Cart = ({props}) => {
+export default class Cart extends Component {
 
-  componentDidMount() {
-    loadScript('//checkout.stripe.com/checkout.js', (window) => {
-      window.renderShoppingCart(document.getElementById('shopping-cart-container'), )
-    });
+  componentDidMount(props) {
+    // loadScript('//checkout.stripe.com/checkout.js', (window) => {
+    //   window.renderShoppingCart(document.getElementById('shopping-cart-container'))
+    // });
   }
 
-  render () {
+  render(props) {
     return (
       <div>
         <div className="container no-padding">
@@ -19,5 +19,3 @@ const Cart = ({props}) => {
     )
   }
 }
-
-export default Cart;

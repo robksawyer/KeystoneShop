@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Landing = ({props}) => {
+const Landing = (props) => {
   return (
     <div>
       <div className="container-fluid home-image">

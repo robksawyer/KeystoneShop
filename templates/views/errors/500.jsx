@@ -1,6 +1,6 @@
 import React from 'react';
 
-const 500 = () => {
+const e500 = () => {
   return (
     <div class="container">
       <h1>Error (500)</h1>
@@ -9,4 +9,4 @@ const 500 = () => {
   )
 }
 
-export default 500;
+export default e500;
