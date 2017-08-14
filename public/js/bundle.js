@@ -29278,7 +29278,7 @@
 	var Index = function Index(props) {
 	  return _react2.default.createElement(
 	    _reactStripeElements.StripeProvider,
-	    { apiKey: stripeApiKey },
+	    { apiKey: props.stripeApiKey },
 	    _react2.default.createElement(
 	      _Default2.default,
 	      { props: props },
@@ -30028,6 +30028,7 @@
 				//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 				//- which generate links to edit content for users who can access Keystone
 				_react2.default.createElement('script', { src: '/keystone/js/content/editor.js' }),
+				_react2.default.createElement('script', { src: '//js.stripe.com/v3/' }),
 				_react2.default.createElement('script', { src: '/js/bundle.js' }),
 	
 				//- Add scripts that are globally required by your site here.

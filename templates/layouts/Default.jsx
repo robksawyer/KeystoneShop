@@ -69,6 +69,11 @@ const Default = (props) => {
 					<script src="/keystone/js/content/editor.js"></script>
 				}
 
+				{
+					//- See https://github.com/stripe/react-stripe-elements for more.
+				}
+				<script src="//js.stripe.com/v3/"></script>
+
 				<script src="/js/bundle.js"></script>
 				{
 					//- Add scripts that are globally required by your site here.

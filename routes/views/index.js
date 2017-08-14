@@ -12,5 +12,6 @@ exports = module.exports = function(req, res) {
 	locals.stripeApiKey = keystone.get('stripe publishable key');
 
 	// Render the Index.jsx view
-	view.render('../Index', locals);
+	// WARNING: Don't try to pass locals as a param. Otherwise, it'll create a Circular error.
+	view.render('../Index');
 };

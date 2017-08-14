@@ -6,7 +6,7 @@ import Landing from './components/Landing';
 
 const Index = (props) => {
   return (
-    <StripeProvider apiKey={ stripeApiKey }>
+    <StripeProvider apiKey={ props.stripeApiKey }>
       <Default props={props}>
         <Landing props={props} />
       </Default>

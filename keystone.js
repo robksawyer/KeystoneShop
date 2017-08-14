@@ -84,6 +84,9 @@ keystone.set('locals', {
 	editable: keystone.content.editable
 });
 
+// Load your project's Routes
+keystone.set('routes', require('./routes'));
+
 // Setup Store Gateway
 keystone.set('store gateway', 'stripe')
 // Setup Default Country
@@ -92,9 +95,6 @@ keystone.set('store country', 'US')
 // Setup Stripe keys
 keystone.set('stripe secret key', process.env.STRIPE_SECRET_KEY || 'STRIPE_SECRET_KEY')
 keystone.set('stripe publishable key', process.env.STRIPE_PUBLISHABLE_KEY || 'STRIPE_PUBLISHABLE_KEY')
-
-// Load your project's Routes
-keystone.set('routes', require('./routes'));
 
 // Configure the navigation bar in Keystone's Admin UI
 
