@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === 'production'){
 // Require keystone
 var keystone = require('keystone');
 var pkg = require('./package.json');
-var renderer = require('express-react-engine');
+var renderer = require('react-engine');
 
 var engine = renderer.server.create({
 	performanceCollector: function(stats) {
