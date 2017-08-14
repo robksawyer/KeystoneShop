@@ -19,10 +19,7 @@ var _ = require('underscore');
 */
 
 exports.initLocals = function(req, res, next) {
-
-	var locals = res.locals;
-
-	locals.navLinks = [
+	res.locals.navLinks = [
 		{ label: 'Home',		key: 'home',		href: '/' },
 		{ label: 'Store',		key: 'store',	href: '/store' },
 		{ label: 'Blog',		key: 'blog',		href: '/blog' },
@@ -37,9 +34,7 @@ exports.initLocals = function(req, res, next) {
 			canAccessKeystone: req.user.canAccessKeystone, // convert from virtual to value, virtual doesn't work from Props
 		};
 	}
-
 	next();
-
 };
 
 
