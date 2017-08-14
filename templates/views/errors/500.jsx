@@ -1,12 +1,17 @@
+'use strict';
+
 import React from 'react';
 
-const e500 = () => {
-  return (
-    <div class="container">
-      <h1>Error (500)</h1>
-      <p class="lead">Sorry, the site has encountered an error.</p>
-    </div>
-  )
-}
+module.exports = React.createClass({
+  displayName: '500',
 
-export default e500;
+  render: function render() {
+    return (
+      <div>
+        <h1>Internal Service Error (500)</h1>
+        <h3>Error message: {this.props.err.message}</h3>
+        <code>{this.props.err.stack}</code>
+      </div>
+    );
+  }
+});

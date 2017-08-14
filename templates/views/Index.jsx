@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {StripeProvider} from 'react-stripe-elements';
 
-// import Default from '../layouts/Default';
+import Default from '../layouts/Default';
 import Landing from './components/Landing';
 
 const Index = (props) => {

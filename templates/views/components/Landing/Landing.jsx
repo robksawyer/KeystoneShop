@@ -29,5 +29,4 @@ const Landing = (props) => {
   )
 }
 
-// React Engine needs exports, don't export default
-module.exports = Landing;
+export default Landing;

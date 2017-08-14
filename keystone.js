@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === 'production'){
 let keystone = require('keystone');
 let pkg = require('./package.json');
 let renderer = require('react-engine');
-let expressView = require('react-engine/lib/expressView');
+// let expressView = require('react-engine/lib/expressView');
 
 let engine = renderer.server.create({
 	performanceCollector: function(stats) {
@@ -48,7 +48,7 @@ keystone.init({
 	'views': 'templates/views/components',
 	'view engine': 'jsx',
 	'custom engine': engine,
-	'view': expressView,
+	'view': renderer.expressView,
 
 	'emails': 'templates/emails',
 	'admin path': 'admin',
