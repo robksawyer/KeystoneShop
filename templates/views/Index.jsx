@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StripeProvider} from 'react-stripe-elements';
 
-import Default from '../layouts/Default';
+// import Default from '../layouts/Default';
 import Landing from './components/Landing';
 
 const Index = (props) => {
@@ -14,4 +14,5 @@ const Index = (props) => {
   )
 }
 
+// React Engine needs exports, don't export default
 module.exports = Index;

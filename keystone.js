@@ -10,11 +10,12 @@ if (process.env.NODE_ENV === 'production'){
 }
 
 // Require keystone
-var keystone = require('keystone');
-var pkg = require('./package.json');
-var renderer = require('react-engine');
+let keystone = require('keystone');
+let pkg = require('./package.json');
+let renderer = require('react-engine');
+let expressView = require('react-engine/lib/expressView');
 
-var engine = renderer.server.create({
+let engine = renderer.server.create({
 	performanceCollector: function(stats) {
 		console.log(stats);
 	},
@@ -27,7 +28,7 @@ var engine = renderer.server.create({
 // and documentation.
 
 // Setup the mongo database
-var mongo_url = process.env.MONGO_URI;
+let mongo_url = process.env.MONGO_URI;
 if(process.env.NODE_ENV === 'local') {
 	if(process.env.USE_LIVE_DB === 'true') {
 		mongo_url = process.env.MONGO_URI;
@@ -47,7 +48,7 @@ keystone.init({
 	'views': 'templates/views/components',
 	'view engine': 'jsx',
 	'custom engine': engine,
-	'view': renderer.expressView,
+	'view': expressView,
 
 	'emails': 'templates/emails',
 	'admin path': 'admin',

@@ -20,7 +20,6 @@
 
 var keystone = require('keystone');
 var middleware = require('./middleware');
-var reactExpressMiddleware = require('react-express-middleware');
 var importRoutes = keystone.importer(__dirname);
 
 // Common Middleware
@@ -34,15 +33,7 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function(app) {
-
-	// Isomorphic react render middleware
-	// @see https://github.com/wesleytodd/react-express-middleware
-	// app._router.use(reactExpressMiddleware({
-	// 	template: '../templates/layouts/default',
-	// 	element: 'app', // The element on the front-end to render into, can be a selector (string) or function
-	// 	key: 'content' // the variable exposed to the express template engine with the rendered html string
-	// }));
-
+	
 	// Views
 	app.get('/', routes.views.index);
 	app.get('/blog/:category?', routes.views.blog);

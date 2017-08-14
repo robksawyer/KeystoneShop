@@ -30,7 +30,13 @@ exports.initLocals = function(req, res, next) {
 		{ label: 'Contact',		key: 'contact',		href: '/contact' },
 	];
 
-	locals.user = req.user;
+	// locals.user = req.user;
+	if (req.user) {
+		res.locals.user = {
+			...req.user,
+			canAccessKeystone: req.user.canAccessKeystone, // convert from virtual to value, virtual doesn't work from Props
+		};
+	}
 
 	next();
 
