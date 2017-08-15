@@ -6,7 +6,6 @@ const Footer = (props) => {
 
   return (
     <div className="container" id="footer">
-      {props.children}
       <ul className="nav">
         {
           navLinks.map((link) => (

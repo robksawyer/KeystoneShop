@@ -31,7 +31,7 @@
     "react-engine": "^4.3.0",
     "react-number-format": "^2.0.3",
     "react-stripe-elements": "^0.0.7",
-    "stripe": "^4.23.2",
+    "stripe": "^4.24.0",
     "stylus": "^0.54.5",
     "superagent": "^1.6.1",
     "underscore": "^1.8.3",
