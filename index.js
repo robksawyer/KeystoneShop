@@ -13,6 +13,7 @@ var options = {
   // supply a function that can be called
   // to resolve the file that was rendered.
   viewResolver: function(viewName) {
+    console.log(viewName);
     return require('./templates/views/' + viewName);
   }
 };

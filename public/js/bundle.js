@@ -60,6 +60,7 @@
 	  // supply a function that can be called
 	  // to resolve the file that was rendered.
 	  viewResolver: function viewResolver(viewName) {
+	    console.log(viewName);
 	    return __webpack_require__(294)("./" + viewName);
 	  }
 	};
@@ -29150,94 +29151,98 @@
 	var map = {
 		"./Index": 295,
 		"./Index.jsx": 295,
-		"./components/Blog/Blog": 296,
-		"./components/Blog/Blog.jsx": 296,
-		"./components/Blog/BlogCategories/BlogCategories": 304,
-		"./components/Blog/BlogCategories/BlogCategories.jsx": 304,
-		"./components/Blog/BlogCategories/index": 303,
-		"./components/Blog/BlogCategories/index.jsx": 303,
-		"./components/Blog/BlogContent/BlogContent": 298,
-		"./components/Blog/BlogContent/BlogContent.jsx": 298,
-		"./components/Blog/BlogContent/index": 297,
-		"./components/Blog/BlogContent/index.jsx": 297,
-		"./components/Blog/BlogPost/BlogPost": 300,
-		"./components/Blog/BlogPost/BlogPost.jsx": 300,
-		"./components/Blog/BlogPost/index": 299,
-		"./components/Blog/BlogPost/index.jsx": 299,
-		"./components/Blog/Pagination/Pagination": 302,
-		"./components/Blog/Pagination/Pagination.jsx": 302,
-		"./components/Blog/Pagination/index": 301,
-		"./components/Blog/Pagination/index.jsx": 301,
-		"./components/Blog/index": 305,
-		"./components/Blog/index.jsx": 305,
-		"./components/Cart/Cart": 306,
-		"./components/Cart/Cart.jsx": 306,
-		"./components/Cart/index": 315,
-		"./components/Cart/index.jsx": 315,
-		"./components/Contact/Contact": 316,
-		"./components/Contact/Contact.jsx": 316,
-		"./components/Contact/index": 317,
-		"./components/Contact/index.jsx": 317,
-		"./components/Footer/Footer": 318,
-		"./components/Footer/Footer.jsx": 318,
-		"./components/Footer/index": 319,
-		"./components/Footer/index.jsx": 319,
-		"./components/Gallery/Gallery": 320,
-		"./components/Gallery/Gallery.jsx": 320,
-		"./components/Gallery/GalleryHeader": 325,
-		"./components/Gallery/GalleryHeader.jsx": 325,
-		"./components/Gallery/GalleryImages": 326,
-		"./components/Gallery/GalleryImages.jsx": 326,
-		"./components/Gallery/index": 327,
-		"./components/Gallery/index.jsx": 327,
-		"./components/Header/Header": 322,
-		"./components/Header/Header.jsx": 322,
-		"./components/Header/index": 321,
-		"./components/Header/index.jsx": 321,
-		"./components/Landing/Landing": 328,
-		"./components/Landing/Landing.jsx": 328,
-		"./components/Landing/index": 329,
-		"./components/Landing/index.jsx": 329,
-		"./components/Navigation/Navigation": 324,
-		"./components/Navigation/Navigation.jsx": 324,
-		"./components/Navigation/index": 323,
-		"./components/Navigation/index.jsx": 323,
-		"./components/PaymentForm/PaymentForm": 330,
-		"./components/PaymentForm/PaymentForm.jsx": 330,
-		"./components/PaymentForm/index": 331,
-		"./components/PaymentForm/index.jsx": 331,
-		"./components/Post/Post": 332,
-		"./components/Post/Post.jsx": 332,
-		"./components/Post/PostBody": 335,
-		"./components/Post/PostBody.jsx": 335,
-		"./components/Post/PostHeader": 334,
-		"./components/Post/PostHeader.jsx": 334,
-		"./components/Post/index": 336,
-		"./components/Post/index.jsx": 336,
-		"./components/Product/Product": 337,
-		"./components/Product/Product.jsx": 337,
-		"./components/Product/StoreCategories": 339,
-		"./components/Product/StoreCategories.jsx": 339,
-		"./components/Product/StoreContent": 338,
-		"./components/Product/StoreContent.jsx": 338,
-		"./components/Product/index": 340,
-		"./components/Product/index.jsx": 340,
-		"./components/Products/ProductCategories": 341,
-		"./components/Products/ProductCategories.jsx": 341,
-		"./components/Products/ProductResult": 342,
-		"./components/Products/ProductResult.jsx": 342,
-		"./components/Products/Products": 343,
-		"./components/Products/Products.jsx": 343,
-		"./components/Products/StoreContent": 344,
-		"./components/Products/StoreContent.jsx": 344,
-		"./components/Products/index": 345,
-		"./components/Products/index.jsx": 345,
-		"./errors/404": 346,
-		"./errors/404.jsx": 346,
-		"./errors/500": 347,
-		"./errors/500.jsx": 347,
-		"./helpers/load-script": 348,
-		"./helpers/load-script.js": 348
+		"./components/Blog/Blog": 309,
+		"./components/Blog/Blog.jsx": 309,
+		"./components/Blog/BlogCategories/BlogCategories": 317,
+		"./components/Blog/BlogCategories/BlogCategories.jsx": 317,
+		"./components/Blog/BlogCategories/index": 316,
+		"./components/Blog/BlogCategories/index.jsx": 316,
+		"./components/Blog/BlogContent/BlogContent": 311,
+		"./components/Blog/BlogContent/BlogContent.jsx": 311,
+		"./components/Blog/BlogContent/index": 310,
+		"./components/Blog/BlogContent/index.jsx": 310,
+		"./components/Blog/BlogPost/BlogPost": 313,
+		"./components/Blog/BlogPost/BlogPost.jsx": 313,
+		"./components/Blog/BlogPost/index": 312,
+		"./components/Blog/BlogPost/index.jsx": 312,
+		"./components/Blog/Pagination/Pagination": 315,
+		"./components/Blog/Pagination/Pagination.jsx": 315,
+		"./components/Blog/Pagination/index": 314,
+		"./components/Blog/Pagination/index.jsx": 314,
+		"./components/Blog/index": 318,
+		"./components/Blog/index.jsx": 318,
+		"./components/Cart/Cart": 319,
+		"./components/Cart/Cart.jsx": 319,
+		"./components/Cart/index": 328,
+		"./components/Cart/index.jsx": 328,
+		"./components/Contact/Contact": 329,
+		"./components/Contact/Contact.jsx": 329,
+		"./components/Contact/index": 330,
+		"./components/Contact/index.jsx": 330,
+		"./components/ContentBody/ContentBody": 304,
+		"./components/ContentBody/ContentBody.jsx": 304,
+		"./components/ContentBody/index": 303,
+		"./components/ContentBody/index.jsx": 303,
+		"./components/Footer/Footer": 306,
+		"./components/Footer/Footer.jsx": 306,
+		"./components/Footer/index": 305,
+		"./components/Footer/index.jsx": 305,
+		"./components/Gallery/Gallery": 331,
+		"./components/Gallery/Gallery.jsx": 331,
+		"./components/Gallery/GalleryHeader": 332,
+		"./components/Gallery/GalleryHeader.jsx": 332,
+		"./components/Gallery/GalleryImages": 333,
+		"./components/Gallery/GalleryImages.jsx": 333,
+		"./components/Gallery/index": 334,
+		"./components/Gallery/index.jsx": 334,
+		"./components/Header/Header": 300,
+		"./components/Header/Header.jsx": 300,
+		"./components/Header/index": 299,
+		"./components/Header/index.jsx": 299,
+		"./components/Landing/Landing": 308,
+		"./components/Landing/Landing.jsx": 308,
+		"./components/Landing/index": 307,
+		"./components/Landing/index.jsx": 307,
+		"./components/Navigation/Navigation": 302,
+		"./components/Navigation/Navigation.jsx": 302,
+		"./components/Navigation/index": 301,
+		"./components/Navigation/index.jsx": 301,
+		"./components/PaymentForm/PaymentForm": 335,
+		"./components/PaymentForm/PaymentForm.jsx": 335,
+		"./components/PaymentForm/index": 336,
+		"./components/PaymentForm/index.jsx": 336,
+		"./components/Post/Post": 337,
+		"./components/Post/Post.jsx": 337,
+		"./components/Post/PostBody": 340,
+		"./components/Post/PostBody.jsx": 340,
+		"./components/Post/PostHeader": 339,
+		"./components/Post/PostHeader.jsx": 339,
+		"./components/Post/index": 341,
+		"./components/Post/index.jsx": 341,
+		"./components/Product/Product": 342,
+		"./components/Product/Product.jsx": 342,
+		"./components/Product/StoreCategories": 344,
+		"./components/Product/StoreCategories.jsx": 344,
+		"./components/Product/StoreContent": 343,
+		"./components/Product/StoreContent.jsx": 343,
+		"./components/Product/index": 345,
+		"./components/Product/index.jsx": 345,
+		"./components/Products/ProductCategories": 346,
+		"./components/Products/ProductCategories.jsx": 346,
+		"./components/Products/ProductResult": 347,
+		"./components/Products/ProductResult.jsx": 347,
+		"./components/Products/Products": 348,
+		"./components/Products/Products.jsx": 348,
+		"./components/Products/StoreContent": 349,
+		"./components/Products/StoreContent.jsx": 349,
+		"./components/Products/index": 350,
+		"./components/Products/index.jsx": 350,
+		"./errors/404": 351,
+		"./errors/404.jsx": 351,
+		"./errors/500": 352,
+		"./errors/500.jsx": 352,
+		"./helpers/load-script": 353,
+		"./helpers/load-script.js": 353
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -29263,22 +29268,23 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Default = __webpack_require__(296);
+	
+	var _Default2 = _interopRequireDefault(_Default);
+	
+	var _Landing = __webpack_require__(307);
+	
+	var _Landing2 = _interopRequireDefault(_Landing);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// Components
-	// import Default from '../layouts/Default';
-	// import Landing from './components/Landing';
-	
 	var Index = function Index(props) {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    'Hi!'
-	  )
-	  // <Default props={props}>
-	  //   <Landing props={props} />
-	  // </Default>
-	  ;
+	    _Default2.default,
+	    props,
+	    _react2.default.createElement(_Landing2.default, { props: props })
+	  );
 	};
 	
 	// React Engine needs exports, don't export default
@@ -29294,15 +29300,562 @@
 	  value: true
 	});
 	
+	var _Default = __webpack_require__(297);
+	
+	var _Default2 = _interopRequireDefault(_Default);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Default2.default;
+
+/***/ }),
+/* 297 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
 	var _react = __webpack_require__(236);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _BlogContent = __webpack_require__(297);
+	var _FlashMessages = __webpack_require__(298);
+	
+	var _FlashMessages2 = _interopRequireDefault(_FlashMessages);
+	
+	var _Header = __webpack_require__(299);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+	
+	var _Navigation = __webpack_require__(301);
+	
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+	
+	var _ContentBody = __webpack_require__(303);
+	
+	var _ContentBody2 = _interopRequireDefault(_ContentBody);
+	
+	var _Footer = __webpack_require__(305);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Default = function Default(props) {
+		return _react2.default.createElement(
+			'html',
+			null,
+			_react2.default.createElement(
+				'head',
+				null,
+				_react2.default.createElement('meta', { charSet: 'utf-8' }),
+				_react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }),
+				_react2.default.createElement('meta', { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' }),
+				_react2.default.createElement(
+					'title',
+					null,
+					props.title || 'Keystone React Shop'
+				),
+				_react2.default.createElement('link', { rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }),
+				_react2.default.createElement('link', { href: '/styles/site.css', rel: 'stylesheet' }),
+				props.user && props.user.canAccessKeystone && _react2.default.createElement('link', { href: '/keystone/styles/content/editor.min.css', rel: 'stylesheet' }),
+				props.css,
+				props.head
+			),
+			_react2.default.createElement(
+				'body',
+				null,
+				_react2.default.createElement(
+					_Header2.default,
+					props,
+					_react2.default.createElement(_Navigation2.default, props)
+				),
+				_react2.default.createElement(
+					_ContentBody2.default,
+					props,
+	
+					//- The Intro block appears above flash messages (used for temporary information display)
+					props.intro,
+	
+					//- Flash messages allow you to display once-off status messages to users, e.g. form
+					//- validation errors, success messages, etc.
+					_react2.default.createElement(_FlashMessages2.default, { messages: props.messages }),
+	
+					//- The children block should contain the body of your template's content
+					props.children
+				),
+				_react2.default.createElement(_Footer2.default, props),
+				_react2.default.createElement('script', { src: '/js/jquery/jquery-2.1.4.min.js' }),
+				_react2.default.createElement('script', { src: '/js/bootstrap/bootstrap-3.3.5.min.js' }),
+				_react2.default.createElement('script', { src: '//js.stripe.com/v3/' }),
+				props.user && props.user.canAccessKeystone &&
+				//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
+				//- which generate links to edit content for users who can access Keystone
+				_react2.default.createElement('script', { src: '/keystone/js/content/editor.js' }),
+				_react2.default.createElement('script', { src: '/js/bundle.js' }),
+	
+				//- Add scripts that are globally required by your site here.
+	
+				//- Include template-specific javascript files by extending the js block
+				props.js
+			)
+		);
+	};
+	
+	// Components
+	exports.default = Default;
+
+/***/ }),
+/* 298 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var FlashMessages = function FlashMessages(props) {
+	    // TODO: recreate this component
+	    return _react2.default.createElement('div', null);
+	};
+	
+	exports.default = FlashMessages;
+	
+	// mixin flash-messages(messages)
+	// 	if messages
+	// 		#flash-messages.container
+	// 			each message in messages.info
+	// 				+flash-message(message, 'info')
+	// 			each message in messages.success
+	// 				+flash-message(message, 'success')
+	// 			each message in messages.warning
+	// 				+flash-message(message, 'warning')
+	// 			each message in messages.error
+	// 				+flash-message(message, 'danger')
+	//
+	// mixin flash-message(message, type)
+	// 	div(class='alert alert-' + type)
+	// 		if utils.isObject(message)
+	// 			if message.title
+	// 				h4= message.title
+	// 			if message.detail
+	// 				p= message.detail
+	// 			if message.list
+	// 				ul
+	// 					each item in message.list
+	// 						li= item
+	// 		else
+	// 			= message
+
+/***/ }),
+/* 299 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Header = __webpack_require__(300);
+	
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Header2.default;
+
+/***/ }),
+/* 300 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Header = function Header(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { id: "header", className: "container no-padding" },
+	    props.children
+	  );
+	};
+	
+	exports.default = Header;
+
+/***/ }),
+/* 301 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Navigation = __webpack_require__(302);
+	
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Navigation2.default;
+
+/***/ }),
+/* 302 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Navigation = function Navigation(props) {
+	  var navLinks = props.navLinks,
+	      section = props.section;
+	
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "navbar navbar-default", role: "navigation" },
+	    _react2.default.createElement(
+	      "div",
+	      { className: "navbar-header" },
+	      _react2.default.createElement(
+	        "button",
+	        { className: "navbar-toggle", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse" },
+	        _react2.default.createElement(
+	          "span",
+	          { className: "sr-only" },
+	          "Toggle navigation"
+	        ),
+	        _react2.default.createElement("span", { className: "icon-bar" }),
+	        _react2.default.createElement("span", { className: "icon-bar" }),
+	        _react2.default.createElement("span", { className: "icon-bar" })
+	      ),
+	      _react2.default.createElement("a", { className: "navbar-brand", href: "/" })
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "collapse navbar-collapse" },
+	      _react2.default.createElement(
+	        "ul",
+	        { className: "nav navbar-nav navbar-left" },
+	        navLinks.map(function (link) {
+	          return _react2.default.createElement(
+	            "li",
+	            { key: link.key, className: section == link.key ? 'active' : null },
+	            _react2.default.createElement(
+	              "a",
+	              { href: link.href },
+	              link.label
+	            )
+	          );
+	        })
+	      ),
+	      _react2.default.createElement(
+	        "ul",
+	        { className: "nav navbar-nav navbar-right" },
+	        _react2.default.createElement(
+	          "li",
+	          null,
+	          _react2.default.createElement(
+	            "a",
+	            { className: "shopping-cart", href: "/cart" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "shopping-cart-label" },
+	              "Basket"
+	            ),
+	            _react2.default.createElement("div", { className: "shopping-cart-count" })
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+	
+	exports.default = Navigation;
+
+/***/ }),
+/* 303 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _ContentBody = __webpack_require__(304);
+	
+	var _ContentBody2 = _interopRequireDefault(_ContentBody);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _ContentBody2.default;
+
+/***/ }),
+/* 304 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContentBody = function ContentBody(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { id: "body" },
+	
+	    //- The children block should contain the body of your template's content
+	    props.children
+	  );
+	};
+	
+	exports.default = ContentBody;
+
+/***/ }),
+/* 305 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Footer = __webpack_require__(306);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Footer2.default;
+
+/***/ }),
+/* 306 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Footer = function Footer(props) {
+	  var navLinks = props.navLinks,
+	      section = props.section;
+	
+	
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "container", id: "footer" },
+	    props.children,
+	    _react2.default.createElement(
+	      "ul",
+	      { className: "nav" },
+	      navLinks.map(function (link) {
+	        return _react2.default.createElement(
+	          "li",
+	          { key: link.key, className: section == link.key ? 'active' : null },
+	          _react2.default.createElement(
+	            "a",
+	            { href: link.href },
+	            link.label
+	          )
+	        );
+	      })
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      null,
+	      "Powered by ",
+	      _react2.default.createElement(
+	        "a",
+	        { href: "http://keystonejs.com", target: "_blank" },
+	        "KeystoneJS"
+	      ),
+	      "."
+	    )
+	  );
+	};
+	
+	exports.default = Footer;
+
+/***/ }),
+/* 307 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _Landing = __webpack_require__(308);
+	
+	var _Landing2 = _interopRequireDefault(_Landing);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _Landing2.default;
+
+/***/ }),
+/* 308 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Landing = function Landing(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "div",
+	      { className: "container-fluid home-image" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "container" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "tag-line" },
+	          "Handcrafted",
+	          _react2.default.createElement("br", null),
+	          "for your home"
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "container collections" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "collection" },
+	        _react2.default.createElement(
+	          "a",
+	          { className: "collection-image living", href: "/store/living-room" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "tag-line" },
+	            "Living"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "collection" },
+	        _react2.default.createElement(
+	          "a",
+	          { className: "collection-image kitchen", href: "/store/kitchen" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "tag-line" },
+	            "Kitchen"
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "collection" },
+	        _react2.default.createElement(
+	          "a",
+	          { className: "collection-image bedding", href: "/store/bedroom" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "tag-line" },
+	            "Bedding"
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "container content" },
+	      _react2.default.createElement(
+	        "div",
+	        { className: "col-md-8 col-md-push-2" },
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+	        )
+	      )
+	    ),
+	    _react2.default.createElement("div", { className: "container-fluid home-banner-image" })
+	  );
+	};
+	
+	exports.default = Landing;
+
+/***/ }),
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _BlogContent = __webpack_require__(310);
 	
 	var _BlogContent2 = _interopRequireDefault(_BlogContent);
 	
-	var _BlogCategories = __webpack_require__(303);
+	var _BlogCategories = __webpack_require__(316);
 	
 	var _BlogCategories2 = _interopRequireDefault(_BlogCategories);
 	
@@ -29327,7 +29880,7 @@
 	exports.default = Blog;
 
 /***/ }),
-/* 297 */
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29336,7 +29889,7 @@
 	  value: true
 	});
 	
-	var _BlogContent = __webpack_require__(298);
+	var _BlogContent = __webpack_require__(311);
 	
 	var _BlogContent2 = _interopRequireDefault(_BlogContent);
 
@@ -29345,7 +29898,7 @@
 	exports.default = _BlogContent2.default;
 
 /***/ }),
-/* 298 */
+/* 311 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29358,11 +29911,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _BlogPost = __webpack_require__(299);
+	var _BlogPost = __webpack_require__(312);
 	
 	var _BlogPost2 = _interopRequireDefault(_BlogPost);
 	
-	var _Pagination = __webpack_require__(301);
+	var _Pagination = __webpack_require__(314);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 	
@@ -29430,7 +29983,7 @@
 	exports.default = BlogContent;
 
 /***/ }),
-/* 299 */
+/* 312 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29439,7 +29992,7 @@
 	  value: true
 	});
 	
-	var _BlogPost = __webpack_require__(300);
+	var _BlogPost = __webpack_require__(313);
 	
 	var _BlogPost2 = _interopRequireDefault(_BlogPost);
 
@@ -29448,7 +30001,7 @@
 	exports.default = _BlogPost2.default;
 
 /***/ }),
-/* 300 */
+/* 313 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29516,7 +30069,7 @@
 	exports.default = BlogPost;
 
 /***/ }),
-/* 301 */
+/* 314 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29525,7 +30078,7 @@
 	  value: true
 	});
 	
-	var _Pagination = __webpack_require__(302);
+	var _Pagination = __webpack_require__(315);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 
@@ -29534,7 +30087,7 @@
 	exports.default = _Pagination2.default;
 
 /***/ }),
-/* 302 */
+/* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29611,7 +30164,7 @@
 	};
 
 /***/ }),
-/* 303 */
+/* 316 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29620,7 +30173,7 @@
 	  value: true
 	});
 	
-	var _BlogCategories = __webpack_require__(304);
+	var _BlogCategories = __webpack_require__(317);
 	
 	var _BlogCategories2 = _interopRequireDefault(_BlogCategories);
 
@@ -29629,7 +30182,7 @@
 	exports.default = _BlogCategories2.default;
 
 /***/ }),
-/* 304 */
+/* 317 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -29676,7 +30229,7 @@
 	exports.default = BlogCategories;
 
 /***/ }),
-/* 305 */
+/* 318 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29685,7 +30238,7 @@
 	  value: true
 	});
 	
-	var _Blog = __webpack_require__(296);
+	var _Blog = __webpack_require__(309);
 	
 	var _Blog2 = _interopRequireDefault(_Blog);
 
@@ -29694,7 +30247,7 @@
 	exports.default = _Blog2.default;
 
 /***/ }),
-/* 306 */
+/* 319 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29709,7 +30262,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactStripeElements = __webpack_require__(307);
+	var _reactStripeElements = __webpack_require__(320);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -29752,7 +30305,7 @@
 	exports.default = Cart;
 
 /***/ }),
-/* 307 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29762,19 +30315,19 @@
 	});
 	exports.PostalCodeElement = exports.CardCVCElement = exports.CardExpiryElement = exports.CardNumberElement = exports.CardElement = exports.Elements = exports.injectStripe = exports.StripeProvider = undefined;
 	
-	var _Provider = __webpack_require__(308);
+	var _Provider = __webpack_require__(321);
 	
 	var _Provider2 = _interopRequireDefault(_Provider);
 	
-	var _inject = __webpack_require__(311);
+	var _inject = __webpack_require__(324);
 	
 	var _inject2 = _interopRequireDefault(_inject);
 	
-	var _Elements = __webpack_require__(312);
+	var _Elements = __webpack_require__(325);
 	
 	var _Elements2 = _interopRequireDefault(_Elements);
 	
-	var _Element = __webpack_require__(313);
+	var _Element = __webpack_require__(326);
 	
 	var _Element2 = _interopRequireDefault(_Element);
 	
@@ -29795,7 +30348,7 @@
 	exports.PostalCodeElement = PostalCodeElement;
 
 /***/ }),
-/* 308 */
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -29810,7 +30363,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(309);
+	var _propTypes = __webpack_require__(322);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -29882,7 +30435,7 @@
 	exports.default = Provider;
 
 /***/ }),
-/* 309 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/**
@@ -29913,13 +30466,13 @@
 	} else {
 	  // By explicitly using `prop-types` you are opting into new production behavior.
 	  // http://fb.me/prop-types-in-prod
-	  module.exports = __webpack_require__(310)();
+	  module.exports = __webpack_require__(323)();
 	}
 	
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 310 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/**
@@ -29984,7 +30537,7 @@
 
 
 /***/ }),
-/* 311 */
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30003,7 +30556,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(309);
+	var _propTypes = __webpack_require__(322);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -30140,7 +30693,7 @@
 	exports.default = inject;
 
 /***/ }),
-/* 312 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30155,7 +30708,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(309);
+	var _propTypes = __webpack_require__(322);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -30245,7 +30798,7 @@
 	exports.default = Elements;
 
 /***/ }),
-/* 313 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30260,11 +30813,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _propTypes = __webpack_require__(309);
+	var _propTypes = __webpack_require__(322);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _shallowEqual = __webpack_require__(314);
+	var _shallowEqual = __webpack_require__(327);
 	
 	var _shallowEqual2 = _interopRequireDefault(_shallowEqual);
 	
@@ -30396,7 +30949,7 @@
 	exports.default = Element;
 
 /***/ }),
-/* 314 */
+/* 327 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -30416,7 +30969,7 @@
 	exports.default = shallowEqual;
 
 /***/ }),
-/* 315 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30425,7 +30978,7 @@
 	  value: true
 	});
 	
-	var _Cart = __webpack_require__(306);
+	var _Cart = __webpack_require__(319);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 
@@ -30434,7 +30987,7 @@
 	exports.default = _Cart2.default;
 
 /***/ }),
-/* 316 */
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30573,7 +31126,7 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 317 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30582,7 +31135,7 @@
 	  value: true
 	});
 	
-	var _Contact = __webpack_require__(316);
+	var _Contact = __webpack_require__(329);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -30591,64 +31144,7 @@
 	exports.default = _Contact2.default;
 
 /***/ }),
-/* 318 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(236);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Footer = function Footer(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "container", id: "footer" },
-	    _react2.default.createElement(
-	      "ul",
-	      { className: "nav" },
-	      props.navLinks.map(function (link) {
-	        return _react2.default.createElement(
-	          "li",
-	          { key: link.key, className: props.section == link.key ? 'active' : null },
-	          _react2.default.createElement(
-	            "a",
-	            { href: link.href },
-	            link.label
-	          )
-	        );
-	      })
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Powered by ",
-	      _react2.default.createElement(
-	        "a",
-	        { href: "http://keystonejs.com", target: "_blank" },
-	        "KeystoneJS"
-	      ),
-	      "."
-	    )
-	  );
-	};
-	
-	exports.default = Footer;
-
-/***/ }),
-/* 319 */
-/***/ (function(module, exports) {
-
-	"use strict";
-
-/***/ }),
-/* 320 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30661,15 +31157,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _Header = __webpack_require__(321);
+	var _Header = __webpack_require__(299);
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _GalleryHeader = __webpack_require__(325);
+	var _GalleryHeader = __webpack_require__(332);
 	
 	var _GalleryHeader2 = _interopRequireDefault(_GalleryHeader);
 	
-	var _GalleryImages = __webpack_require__(326);
+	var _GalleryImages = __webpack_require__(333);
 	
 	var _GalleryImages2 = _interopRequireDefault(_GalleryImages);
 	
@@ -30710,159 +31206,7 @@
 	exports.default = Gallery;
 
 /***/ }),
-/* 321 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _Header = __webpack_require__(322);
-	
-	var _Header2 = _interopRequireDefault(_Header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _Header2.default;
-
-/***/ }),
-/* 322 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(236);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _Navigation = __webpack_require__(323);
-	
-	var _Navigation2 = _interopRequireDefault(_Navigation);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Header = function Header(_ref) {
-	  var props = _ref.props;
-	
-	  return _react2.default.createElement(
-	    'div',
-	    { id: 'header', className: 'container no-padding' },
-	    _react2.default.createElement(_Navigation2.default, { props: props })
-	  );
-	};
-	
-	exports.default = Header;
-
-/***/ }),
-/* 323 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _Navigation = __webpack_require__(324);
-	
-	var _Navigation2 = _interopRequireDefault(_Navigation);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _Navigation2.default;
-
-/***/ }),
-/* 324 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(236);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Navigation = function Navigation(_ref) {
-	  var props = _ref.props;
-	  var navLinks = props.navLinks,
-	      section = props.section;
-	
-	
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "navbar navbar-default", role: "navigation" },
-	    _react2.default.createElement(
-	      "div",
-	      { className: "navbar-header" },
-	      _react2.default.createElement(
-	        "button",
-	        { className: "navbar-toggle", type: "button", "data-toggle": "collapse", "data-target": ".navbar-collapse" },
-	        _react2.default.createElement(
-	          "span",
-	          { className: "sr-only" },
-	          "Toggle navigation"
-	        ),
-	        _react2.default.createElement("span", { className: "icon-bar" }),
-	        _react2.default.createElement("span", { className: "icon-bar" }),
-	        _react2.default.createElement("span", { className: "icon-bar" })
-	      ),
-	      _react2.default.createElement("a", { className: "navbar-brand", href: "/" })
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "collapse navbar-collapse" },
-	      _react2.default.createElement(
-	        "ul",
-	        { className: "nav navbar-nav navbar-left" },
-	        navLinks.map(function (link) {
-	          return _react2.default.createElement(
-	            "li",
-	            { key: link.key, className: section == link.key ? 'active' : null },
-	            _react2.default.createElement(
-	              "a",
-	              { href: link.href },
-	              link.label
-	            )
-	          );
-	        })
-	      ),
-	      _react2.default.createElement(
-	        "ul",
-	        { className: "nav navbar-nav navbar-right" },
-	        _react2.default.createElement(
-	          "li",
-	          null,
-	          _react2.default.createElement(
-	            "a",
-	            { className: "shopping-cart", href: "/cart" },
-	            _react2.default.createElement(
-	              "div",
-	              { className: "shopping-cart-label" },
-	              "Basket"
-	            ),
-	            _react2.default.createElement("div", { className: "shopping-cart-count" })
-	          )
-	        )
-	      )
-	    )
-	  );
-	};
-	
-	exports.default = Navigation;
-
-/***/ }),
-/* 325 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30898,7 +31242,7 @@
 	exports.default = GalleryHeader;
 
 /***/ }),
-/* 326 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -30949,7 +31293,7 @@
 	exports.default = GalleryImages;
 
 /***/ }),
-/* 327 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -30958,7 +31302,7 @@
 	  value: true
 	});
 	
-	var _Gallery = __webpack_require__(320);
+	var _Gallery = __webpack_require__(331);
 	
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -30967,122 +31311,7 @@
 	exports.default = _Gallery2.default;
 
 /***/ }),
-/* 328 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(236);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Landing = function Landing(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    null,
-	    _react2.default.createElement(
-	      "div",
-	      { className: "container-fluid home-image" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "container" },
-	        _react2.default.createElement(
-	          "div",
-	          { className: "tag-line" },
-	          "Handcrafted",
-	          _react2.default.createElement("br", null),
-	          "for your home"
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "container collections" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "collection" },
-	        _react2.default.createElement(
-	          "a",
-	          { className: "collection-image living", href: "/store/living-room" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "tag-line" },
-	            "Living"
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "collection" },
-	        _react2.default.createElement(
-	          "a",
-	          { className: "collection-image kitchen", href: "/store/kitchen" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "tag-line" },
-	            "Kitchen"
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "div",
-	        { className: "collection" },
-	        _react2.default.createElement(
-	          "a",
-	          { className: "collection-image bedding", href: "/store/bedroom" },
-	          _react2.default.createElement(
-	            "div",
-	            { className: "tag-line" },
-	            "Bedding"
-	          )
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      "div",
-	      { className: "container content" },
-	      _react2.default.createElement(
-	        "div",
-	        { className: "col-md-8 col-md-push-2" },
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-	        )
-	      )
-	    ),
-	    _react2.default.createElement("div", { className: "container-fluid home-banner-image" })
-	  );
-	};
-	
-	exports.default = Landing;
-
-/***/ }),
-/* 329 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _Landing = __webpack_require__(328);
-	
-	var _Landing2 = _interopRequireDefault(_Landing);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = _Landing2.default;
-
-/***/ }),
-/* 330 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31118,13 +31347,13 @@
 	exports.default = PaymentForm;
 
 /***/ }),
-/* 331 */
+/* 336 */
 /***/ (function(module, exports) {
 
 	"use strict";
 
 /***/ }),
-/* 332 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31137,15 +31366,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(333);
+	var _reactNumberFormat = __webpack_require__(338);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _PostHeader = __webpack_require__(334);
+	var _PostHeader = __webpack_require__(339);
 	
 	var _PostHeader2 = _interopRequireDefault(_PostHeader);
 	
-	var _PostBody = __webpack_require__(335);
+	var _PostBody = __webpack_require__(340);
 	
 	var _PostBody2 = _interopRequireDefault(_PostBody);
 	
@@ -31197,7 +31426,7 @@
 	exports.default = Post;
 
 /***/ }),
-/* 333 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31206,7 +31435,7 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _propTypes = __webpack_require__(309);
+	var _propTypes = __webpack_require__(322);
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
@@ -31817,7 +32046,7 @@
 
 
 /***/ }),
-/* 334 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31864,7 +32093,7 @@
 	exports.default = PostBody;
 
 /***/ }),
-/* 335 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -31901,7 +32130,7 @@
 	exports.default = PostBody;
 
 /***/ }),
-/* 336 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31910,7 +32139,7 @@
 	  value: true
 	});
 	
-	var _Post = __webpack_require__(332);
+	var _Post = __webpack_require__(337);
 	
 	var _Post2 = _interopRequireDefault(_Post);
 
@@ -31919,7 +32148,7 @@
 	exports.default = _Post2.default;
 
 /***/ }),
-/* 337 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -31934,15 +32163,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(333);
+	var _reactNumberFormat = __webpack_require__(338);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _StoreContent = __webpack_require__(338);
+	var _StoreContent = __webpack_require__(343);
 	
 	var _StoreContent2 = _interopRequireDefault(_StoreContent);
 	
-	var _StoreCategories = __webpack_require__(339);
+	var _StoreCategories = __webpack_require__(344);
 	
 	var _StoreCategories2 = _interopRequireDefault(_StoreCategories);
 	
@@ -32020,7 +32249,7 @@
 	exports.default = Product;
 
 /***/ }),
-/* 338 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32090,7 +32319,7 @@
 	exports.default = StoreContent;
 
 /***/ }),
-/* 339 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32147,7 +32376,7 @@
 	exports.default = StoreCategories;
 
 /***/ }),
-/* 340 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32156,7 +32385,7 @@
 	  value: true
 	});
 	
-	var _Product = __webpack_require__(337);
+	var _Product = __webpack_require__(342);
 	
 	var _Product2 = _interopRequireDefault(_Product);
 
@@ -32165,7 +32394,7 @@
 	exports.default = _Product2.default;
 
 /***/ }),
-/* 341 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32222,7 +32451,7 @@
 	exports.default = ProductCategories;
 
 /***/ }),
-/* 342 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32274,7 +32503,7 @@
 	exports.default = ProductResult;
 
 /***/ }),
-/* 343 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32287,15 +32516,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(333);
+	var _reactNumberFormat = __webpack_require__(338);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _ProductCategories = __webpack_require__(341);
+	var _ProductCategories = __webpack_require__(346);
 	
 	var _ProductCategories2 = _interopRequireDefault(_ProductCategories);
 	
-	var _StoreContent = __webpack_require__(344);
+	var _StoreContent = __webpack_require__(349);
 	
 	var _StoreContent2 = _interopRequireDefault(_StoreContent);
 	
@@ -32321,7 +32550,7 @@
 	exports.default = Products;
 
 /***/ }),
-/* 344 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32334,7 +32563,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _ProductResult = __webpack_require__(342);
+	var _ProductResult = __webpack_require__(347);
 	
 	var _ProductResult2 = _interopRequireDefault(_ProductResult);
 	
@@ -32370,7 +32599,7 @@
 	exports.default = StoreContent;
 
 /***/ }),
-/* 345 */
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32379,7 +32608,7 @@
 	  value: true
 	});
 	
-	var _Products = __webpack_require__(343);
+	var _Products = __webpack_require__(348);
 	
 	var _Products2 = _interopRequireDefault(_Products);
 
@@ -32388,7 +32617,7 @@
 	exports.default = _Products2.default;
 
 /***/ }),
-/* 346 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32418,7 +32647,7 @@
 	exports.default = Error404;
 
 /***/ }),
-/* 347 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32461,7 +32690,7 @@
 	exports.default = Error500;
 
 /***/ }),
-/* 348 */
+/* 353 */
 /***/ (function(module, exports) {
 
 	'use strict';

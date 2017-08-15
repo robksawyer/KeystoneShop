@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const Navigation = ({props}) => {
+const Navigation = (props) => {
 
   let {navLinks, section} = props;
 

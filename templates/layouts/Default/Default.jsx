@@ -1,7 +1,11 @@
 import React from 'react';
-import Header from '../../views/components/Header';
-import Footer from '../../views/components/Footer';
+
+// Components
 import FlashMessages from '../../mixins/FlashMessages';
+import Header from '../../views/components/Header';
+import Navigation from '../../views/components/Navigation';
+import ContentBody from '../../views/components/ContentBody';
+import Footer from '../../views/components/Footer';
 
 const Default = (props) => {
 	return (
@@ -26,29 +30,25 @@ const Default = (props) => {
 			</head>
 
 			<body>
-				<Header props={props} />
-				<div id="body">
+				<Header {...props}>
+					<Navigation {...props}></Navigation>
+				</Header>
+				<ContentBody {...props}>
 					{
-						//- NOTE:
-						//- There is no .container wrapping className around body blocks to allow more flexibility in design.
-						//- Remember to include it in your templates when you override the intro and content blocks!
-					}
-
+		        //- The Intro block appears above flash messages (used for temporary information display)
+		        props.intro
+		      }
+		      {
+		        //- Flash messages allow you to display once-off status messages to users, e.g. form
+		        //- validation errors, success messages, etc.
+		        <FlashMessages messages={props.messages} />
+		      }
 					{
-						//- The Intro block appears above flash messages (used for temporary information display)
-						props.intro
-					}
-					{
-						//- Flash messages allow you to display once-off status messages to users, e.g. form
-						//- validation errors, success messages, etc.
-						<FlashMessages messages={props.messages} />
-					}
-					{
-						//- The children block should contain the body of your template's content
-						props.children
-					}
-				</div>
-				<Footer props={props} />
+		        //- The children block should contain the body of your template's content
+		        props.children
+		      }
+				</ContentBody>
+				<Footer {...props}></Footer>
 
 				{
 					//- jQuery 1.11.3 is included by default, and required by both Bootstrap
@@ -63,16 +63,16 @@ const Default = (props) => {
 				}
 				<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 
+				{
+					//- See https://github.com/stripe/react-stripe-elements for more.
+				}
+				<script src="//js.stripe.com/v3/"></script>
+
 				{ props.user && props.user.canAccessKeystone &&
 					//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 					//- which generate links to edit content for users who can access Keystone
 					<script src="/keystone/js/content/editor.js"></script>
 				}
-
-				{
-					//- See https://github.com/stripe/react-stripe-elements for more.
-				}
-				<script src="//js.stripe.com/v3/"></script>
 
 				<script src="/js/bundle.js"></script>
 				{

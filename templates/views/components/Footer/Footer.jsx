@@ -1,12 +1,16 @@
 import React from 'react';
 
 const Footer = (props) => {
+
+  let {navLinks, section} = props;
+
   return (
     <div className="container" id="footer">
+      {props.children}
       <ul className="nav">
         {
-          props.navLinks.map((link) => (
-            <li key={link.key} className={props.section == link.key ? 'active' : null}>
+          navLinks.map((link) => (
+            <li key={link.key} className={section == link.key ? 'active' : null}>
               <a href={link.href}>{link.label}</a>
             </li>
           ))
