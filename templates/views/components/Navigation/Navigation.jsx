@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 
 const Navigation = (props) => {
-
-  let {navLinks, section} = props;
-
+  const {navLinks, section} = props;
   return (
     <div className="navbar navbar-default" role="navigation">
       <div className="navbar-header">

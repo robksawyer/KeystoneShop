@@ -9,7 +9,6 @@ const Html = (props) => {
       <Head {...props} />
       <body>
         { props.children }
-
         <Scripts {...props} />
       </body>
     </html>

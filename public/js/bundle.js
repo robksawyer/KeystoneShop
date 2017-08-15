@@ -67,7 +67,7 @@
 	    if (viewNameParsed === 'Index.jsx') {
 	      return __webpack_require__(301)("./" + viewNameParsed);
 	    } else {
-	      return __webpack_require__(367)("./" + viewNameParsed);
+	      return __webpack_require__(368)("./" + viewNameParsed);
 	    }
 	  }
 	};
@@ -30848,36 +30848,38 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./Index": 302,
-		"./Index.jsx": 302,
-		"./components/Blog/Blog": 330,
-		"./components/Blog/Blog.jsx": 330,
-		"./components/Blog/BlogCategories/BlogCategories": 338,
-		"./components/Blog/BlogCategories/BlogCategories.jsx": 338,
-		"./components/Blog/BlogCategories/index": 337,
-		"./components/Blog/BlogCategories/index.jsx": 337,
-		"./components/Blog/BlogContent/BlogContent": 332,
-		"./components/Blog/BlogContent/BlogContent.jsx": 332,
-		"./components/Blog/BlogContent/index": 331,
-		"./components/Blog/BlogContent/index.jsx": 331,
-		"./components/Blog/BlogPost/BlogPost": 334,
-		"./components/Blog/BlogPost/BlogPost.jsx": 334,
-		"./components/Blog/BlogPost/index": 333,
-		"./components/Blog/BlogPost/index.jsx": 333,
-		"./components/Blog/Pagination/Pagination": 336,
-		"./components/Blog/Pagination/Pagination.jsx": 336,
-		"./components/Blog/Pagination/index": 335,
-		"./components/Blog/Pagination/index.jsx": 335,
-		"./components/Blog/index": 339,
-		"./components/Blog/index.jsx": 339,
-		"./components/Cart/Cart": 340,
-		"./components/Cart/Cart.jsx": 340,
-		"./components/Cart/index": 341,
-		"./components/Cart/index.jsx": 341,
-		"./components/Contact/Contact": 342,
-		"./components/Contact/Contact.jsx": 342,
-		"./components/Contact/index": 343,
-		"./components/Contact/index.jsx": 343,
+		"./App": 302,
+		"./App.jsx": 302,
+		"./Index": 328,
+		"./Index.jsx": 328,
+		"./components/Blog/Blog": 331,
+		"./components/Blog/Blog.jsx": 331,
+		"./components/Blog/BlogCategories/BlogCategories": 339,
+		"./components/Blog/BlogCategories/BlogCategories.jsx": 339,
+		"./components/Blog/BlogCategories/index": 338,
+		"./components/Blog/BlogCategories/index.jsx": 338,
+		"./components/Blog/BlogContent/BlogContent": 333,
+		"./components/Blog/BlogContent/BlogContent.jsx": 333,
+		"./components/Blog/BlogContent/index": 332,
+		"./components/Blog/BlogContent/index.jsx": 332,
+		"./components/Blog/BlogPost/BlogPost": 335,
+		"./components/Blog/BlogPost/BlogPost.jsx": 335,
+		"./components/Blog/BlogPost/index": 334,
+		"./components/Blog/BlogPost/index.jsx": 334,
+		"./components/Blog/Pagination/Pagination": 337,
+		"./components/Blog/Pagination/Pagination.jsx": 337,
+		"./components/Blog/Pagination/index": 336,
+		"./components/Blog/Pagination/index.jsx": 336,
+		"./components/Blog/index": 340,
+		"./components/Blog/index.jsx": 340,
+		"./components/Cart/Cart": 341,
+		"./components/Cart/Cart.jsx": 341,
+		"./components/Cart/index": 342,
+		"./components/Cart/index.jsx": 342,
+		"./components/Contact/Contact": 343,
+		"./components/Contact/Contact.jsx": 343,
+		"./components/Contact/index": 344,
+		"./components/Contact/index.jsx": 344,
 		"./components/ContentBody/ContentBody": 319,
 		"./components/ContentBody/ContentBody.jsx": 319,
 		"./components/ContentBody/index": 318,
@@ -30886,14 +30888,14 @@
 		"./components/Footer/Footer.jsx": 321,
 		"./components/Footer/index": 320,
 		"./components/Footer/index.jsx": 320,
-		"./components/Gallery/Gallery": 344,
-		"./components/Gallery/Gallery.jsx": 344,
-		"./components/Gallery/GalleryHeader": 345,
-		"./components/Gallery/GalleryHeader.jsx": 345,
-		"./components/Gallery/GalleryImages": 346,
-		"./components/Gallery/GalleryImages.jsx": 346,
-		"./components/Gallery/index": 347,
-		"./components/Gallery/index.jsx": 347,
+		"./components/Gallery/Gallery": 345,
+		"./components/Gallery/Gallery.jsx": 345,
+		"./components/Gallery/GalleryHeader": 346,
+		"./components/Gallery/GalleryHeader.jsx": 346,
+		"./components/Gallery/GalleryImages": 347,
+		"./components/Gallery/GalleryImages.jsx": 347,
+		"./components/Gallery/index": 348,
+		"./components/Gallery/index.jsx": 348,
 		"./components/Head/Head": 327,
 		"./components/Head/Head.jsx": 327,
 		"./components/Head/index": 326,
@@ -30906,54 +30908,54 @@
 		"./components/Html/Html.jsx": 323,
 		"./components/Html/index": 322,
 		"./components/Html/index.jsx": 322,
-		"./components/Landing/Landing": 329,
-		"./components/Landing/Landing.jsx": 329,
-		"./components/Landing/index": 328,
-		"./components/Landing/index.jsx": 328,
+		"./components/Landing/Landing": 330,
+		"./components/Landing/Landing.jsx": 330,
+		"./components/Landing/index": 329,
+		"./components/Landing/index.jsx": 329,
 		"./components/Navigation/Navigation": 317,
 		"./components/Navigation/Navigation.jsx": 317,
 		"./components/Navigation/index": 316,
 		"./components/Navigation/index.jsx": 316,
-		"./components/PaymentForm/PaymentForm": 348,
-		"./components/PaymentForm/PaymentForm.jsx": 348,
-		"./components/PaymentForm/index": 349,
-		"./components/PaymentForm/index.jsx": 349,
-		"./components/Post/Post": 350,
-		"./components/Post/Post.jsx": 350,
-		"./components/Post/PostBody": 353,
-		"./components/Post/PostBody.jsx": 353,
-		"./components/Post/PostHeader": 352,
-		"./components/Post/PostHeader.jsx": 352,
-		"./components/Post/index": 354,
-		"./components/Post/index.jsx": 354,
-		"./components/Product/Product": 355,
-		"./components/Product/Product.jsx": 355,
-		"./components/Product/StoreCategories": 357,
-		"./components/Product/StoreCategories.jsx": 357,
-		"./components/Product/StoreContent": 356,
-		"./components/Product/StoreContent.jsx": 356,
-		"./components/Product/index": 358,
-		"./components/Product/index.jsx": 358,
-		"./components/Products/ProductCategories": 359,
-		"./components/Products/ProductCategories.jsx": 359,
-		"./components/Products/ProductResult": 360,
-		"./components/Products/ProductResult.jsx": 360,
-		"./components/Products/Products": 361,
-		"./components/Products/Products.jsx": 361,
-		"./components/Products/StoreContent": 362,
-		"./components/Products/StoreContent.jsx": 362,
-		"./components/Products/index": 363,
-		"./components/Products/index.jsx": 363,
+		"./components/PaymentForm/PaymentForm": 349,
+		"./components/PaymentForm/PaymentForm.jsx": 349,
+		"./components/PaymentForm/index": 350,
+		"./components/PaymentForm/index.jsx": 350,
+		"./components/Post/Post": 351,
+		"./components/Post/Post.jsx": 351,
+		"./components/Post/PostBody": 354,
+		"./components/Post/PostBody.jsx": 354,
+		"./components/Post/PostHeader": 353,
+		"./components/Post/PostHeader.jsx": 353,
+		"./components/Post/index": 355,
+		"./components/Post/index.jsx": 355,
+		"./components/Product/Product": 356,
+		"./components/Product/Product.jsx": 356,
+		"./components/Product/StoreCategories": 358,
+		"./components/Product/StoreCategories.jsx": 358,
+		"./components/Product/StoreContent": 357,
+		"./components/Product/StoreContent.jsx": 357,
+		"./components/Product/index": 359,
+		"./components/Product/index.jsx": 359,
+		"./components/Products/ProductCategories": 360,
+		"./components/Products/ProductCategories.jsx": 360,
+		"./components/Products/ProductResult": 361,
+		"./components/Products/ProductResult.jsx": 361,
+		"./components/Products/Products": 362,
+		"./components/Products/Products.jsx": 362,
+		"./components/Products/StoreContent": 363,
+		"./components/Products/StoreContent.jsx": 363,
+		"./components/Products/index": 364,
+		"./components/Products/index.jsx": 364,
 		"./components/Scripts/Scripts": 325,
 		"./components/Scripts/Scripts.jsx": 325,
 		"./components/Scripts/index": 324,
 		"./components/Scripts/index.jsx": 324,
-		"./errors/404": 364,
-		"./errors/404.jsx": 364,
-		"./errors/500": 365,
-		"./errors/500.jsx": 365,
-		"./helpers/load-script": 366,
-		"./helpers/load-script.js": 366
+		"./errors/404": 365,
+		"./errors/404.jsx": 365,
+		"./errors/500": 366,
+		"./errors/500.jsx": 366,
+		"./helpers/load-script": 367,
+		"./helpers/load-script.js": 367
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -30975,6 +30977,10 @@
 
 	'use strict';
 	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(236);
@@ -30991,10 +30997,6 @@
 	
 	var _Html2 = _interopRequireDefault(_Html);
 	
-	var _Landing = __webpack_require__(328);
-	
-	var _Landing2 = _interopRequireDefault(_Landing);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31006,13 +31008,13 @@
 	// Components
 	
 	
-	var Index = function (_Component) {
-	  _inherits(Index, _Component);
+	var App = function (_Component) {
+	  _inherits(App, _Component);
 	
-	  function Index() {
-	    _classCallCheck(this, Index);
+	  function App(props) {
+	    _classCallCheck(this, App);
 	
-	    var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 	
 	    _this.state = {
 	      loading: true,
@@ -31028,7 +31030,7 @@
 	   */
 	
 	
-	  _createClass(Index, [{
+	  _createClass(App, [{
 	    key: 'loadPaymentProcessor',
 	    value: function loadPaymentProcessor(onload) {
 	      if (!window.StripeCheckout) {
@@ -31098,20 +31100,17 @@
 	          _react2.default.createElement(
 	            _Default2.default,
 	            this.props,
-	            _react2.default.createElement(_Landing2.default, this.props)
+	            this.props.children
 	          )
 	        )
 	      );
 	    }
 	  }]);
 	
-	  return Index;
+	  return App;
 	}(_react.Component);
 	
-	// React Engine needs exports, don't export default
-	
-	
-	module.exports = Index;
+	exports.default = App;
 
 /***/ }),
 /* 303 */
@@ -31817,10 +31816,6 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _Navigation = __webpack_require__(316);
-	
-	var _Navigation2 = _interopRequireDefault(_Navigation);
-	
 	var _ContentBody = __webpack_require__(318);
 	
 	var _ContentBody2 = _interopRequireDefault(_ContentBody);
@@ -31831,15 +31826,13 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// Components
 	var Default = function Default(props) {
+	
 		return _react2.default.createElement(
-			'div',
-			{ className: 'body' },
-			_react2.default.createElement(
-				_Header2.default,
-				props,
-				_react2.default.createElement(_Navigation2.default, props)
-			),
+			'section',
+			{ id: 'body' },
+			_react2.default.createElement(_Header2.default, { navLinks: props.navLinks, section: props.section }),
 			_react2.default.createElement(
 				_ContentBody2.default,
 				props,
@@ -31858,7 +31851,6 @@
 		);
 	};
 	
-	// Components
 	exports.default = Default;
 
 /***/ }),
@@ -31932,7 +31924,7 @@
 /* 315 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -31942,12 +31934,21 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _Navigation = __webpack_require__(316);
+	
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Header = function Header(props) {
+	  var navLinks = props.navLinks,
+	      section = props.section;
+	
+	
 	  return _react2.default.createElement(
-	    "div",
-	    { id: "header", className: "container no-padding" },
+	    'div',
+	    { id: 'header', className: 'container no-padding' },
+	    _react2.default.createElement(_Navigation2.default, { navLinks: navLinks, section: section }),
 	    props.children
 	  );
 	};
@@ -31991,7 +31992,6 @@
 	var Navigation = function Navigation(props) {
 	  var navLinks = props.navLinks,
 	      section = props.section;
-	
 	
 	  return _react2.default.createElement(
 	    "div",
@@ -32091,8 +32091,8 @@
 	
 	var ContentBody = function ContentBody(props) {
 	  return _react2.default.createElement(
-	    "div",
-	    { id: "body" },
+	    "section",
+	    { id: "content-body-1", className: "content-body" },
 	
 	    //- The children block should contain the body of your template's content
 	    props.children
@@ -32349,11 +32349,72 @@
 
 	'use strict';
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(236);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactStripeElements = __webpack_require__(303);
+	
+	var _App = __webpack_require__(302);
+	
+	var _App2 = _interopRequireDefault(_App);
+	
+	var _Landing = __webpack_require__(329);
+	
+	var _Landing2 = _interopRequireDefault(_Landing);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	// Components
+	
+	
+	var Index = function (_Component) {
+	  _inherits(Index, _Component);
+	
+	  function Index() {
+	    _classCallCheck(this, Index);
+	
+	    return _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).apply(this, arguments));
+	  }
+	
+	  _createClass(Index, [{
+	    key: 'render',
+	    value: function render(props) {
+	      return _react2.default.createElement(
+	        _App2.default,
+	        this.props,
+	        _react2.default.createElement(_Landing2.default, this.props)
+	      );
+	    }
+	  }]);
+	
+	  return Index;
+	}(_react.Component);
+	
+	// React Engine needs exports, don't export default
+	
+	
+	module.exports = Index;
+
+/***/ }),
+/* 329 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
-	var _Landing = __webpack_require__(329);
+	var _Landing = __webpack_require__(330);
 	
 	var _Landing2 = _interopRequireDefault(_Landing);
 
@@ -32362,7 +32423,7 @@
 	exports.default = _Landing2.default;
 
 /***/ }),
-/* 329 */
+/* 330 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32459,7 +32520,7 @@
 	exports.default = Landing;
 
 /***/ }),
-/* 330 */
+/* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32472,11 +32533,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _BlogContent = __webpack_require__(331);
+	var _BlogContent = __webpack_require__(332);
 	
 	var _BlogContent2 = _interopRequireDefault(_BlogContent);
 	
-	var _BlogCategories = __webpack_require__(337);
+	var _BlogCategories = __webpack_require__(338);
 	
 	var _BlogCategories2 = _interopRequireDefault(_BlogCategories);
 	
@@ -32501,7 +32562,7 @@
 	exports.default = Blog;
 
 /***/ }),
-/* 331 */
+/* 332 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32510,7 +32571,7 @@
 	  value: true
 	});
 	
-	var _BlogContent = __webpack_require__(332);
+	var _BlogContent = __webpack_require__(333);
 	
 	var _BlogContent2 = _interopRequireDefault(_BlogContent);
 
@@ -32519,7 +32580,7 @@
 	exports.default = _BlogContent2.default;
 
 /***/ }),
-/* 332 */
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32532,11 +32593,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _BlogPost = __webpack_require__(333);
+	var _BlogPost = __webpack_require__(334);
 	
 	var _BlogPost2 = _interopRequireDefault(_BlogPost);
 	
-	var _Pagination = __webpack_require__(335);
+	var _Pagination = __webpack_require__(336);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 	
@@ -32604,7 +32665,7 @@
 	exports.default = BlogContent;
 
 /***/ }),
-/* 333 */
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32613,7 +32674,7 @@
 	  value: true
 	});
 	
-	var _BlogPost = __webpack_require__(334);
+	var _BlogPost = __webpack_require__(335);
 	
 	var _BlogPost2 = _interopRequireDefault(_BlogPost);
 
@@ -32622,7 +32683,7 @@
 	exports.default = _BlogPost2.default;
 
 /***/ }),
-/* 334 */
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32690,7 +32751,7 @@
 	exports.default = BlogPost;
 
 /***/ }),
-/* 335 */
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32699,7 +32760,7 @@
 	  value: true
 	});
 	
-	var _Pagination = __webpack_require__(336);
+	var _Pagination = __webpack_require__(337);
 	
 	var _Pagination2 = _interopRequireDefault(_Pagination);
 
@@ -32708,7 +32769,7 @@
 	exports.default = _Pagination2.default;
 
 /***/ }),
-/* 336 */
+/* 337 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32785,7 +32846,7 @@
 	};
 
 /***/ }),
-/* 337 */
+/* 338 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32794,7 +32855,7 @@
 	  value: true
 	});
 	
-	var _BlogCategories = __webpack_require__(338);
+	var _BlogCategories = __webpack_require__(339);
 	
 	var _BlogCategories2 = _interopRequireDefault(_BlogCategories);
 
@@ -32803,7 +32864,7 @@
 	exports.default = _BlogCategories2.default;
 
 /***/ }),
-/* 338 */
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -32850,7 +32911,7 @@
 	exports.default = BlogCategories;
 
 /***/ }),
-/* 339 */
+/* 340 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32859,7 +32920,7 @@
 	  value: true
 	});
 	
-	var _Blog = __webpack_require__(330);
+	var _Blog = __webpack_require__(331);
 	
 	var _Blog2 = _interopRequireDefault(_Blog);
 
@@ -32868,7 +32929,7 @@
 	exports.default = _Blog2.default;
 
 /***/ }),
-/* 340 */
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32885,6 +32946,10 @@
 	
 	var _reactStripeElements = __webpack_require__(303);
 	
+	var _Default = __webpack_require__(311);
+	
+	var _Default2 = _interopRequireDefault(_Default);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -32897,29 +32962,47 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 	
 	
+	// Components
+	
+	
 	var Cart = function (_Component) {
 	  _inherits(Cart, _Component);
 	
 	  function Cart() {
-	    var _ref;
-	
-	    var _temp, _this, _ret;
-	
 	    _classCallCheck(this, Cart);
 	
-	    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-	      args[_key] = arguments[_key];
-	    }
+	    var _this = _possibleConstructorReturn(this, (Cart.__proto__ || Object.getPrototypeOf(Cart)).call(this));
 	
-	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Cart.__proto__ || Object.getPrototypeOf(Cart)).call.apply(_ref, [this].concat(args))), _this), _this.handleSubmit = function (ev) {
+	    _this.handleElementRef = function (element) {
+	      _this._cardElement = element;
+	    };
+	
+	    _this.handleSubmit = function (ev) {
 	      // We don't want to let default form submission happen here, which would refresh the page.
 	      ev.preventDefault();
 	
+	      console.log(ev);
 	      // this.state.stripe.createToken(this._cardElement, {name: 'Jenny Rosen'});
-	    }, _temp), _possibleConstructorReturn(_this, _ret);
+	    };
+	
+	    _this.state = {
+	      stripe: null,
+	      elements: null
+	    };
+	    return _this;
 	  }
 	
 	  _createClass(Cart, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      // You will probably want to keep references to these objects if you're using them in other parts of your form:
+	      var stripe = Stripe(this.props.stripeApiKey);
+	      var elements = stripe.elements();
+	      console.log(stripe);
+	      console.log(elements);
+	      this.setState({ stripe: stripe, elements: elements });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render(props) {
 	      if (this.state.elements) {
@@ -32935,7 +33018,12 @@
 	              _react2.default.createElement(
 	                'label',
 	                null,
-	                'Card details'
+	                'Card details',
+	                _react2.default.createElement(_reactStripeElements.CardElement, {
+	                  elements: this.state.elements,
+	                  elementRef: this.handleElementRef,
+	                  style: { base: { fontSize: '18px' } }
+	                })
 	              ),
 	              _react2.default.createElement(
 	                'button',
@@ -32961,7 +33049,7 @@
 	exports.default = Cart;
 
 /***/ }),
-/* 341 */
+/* 342 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32970,7 +33058,7 @@
 	  value: true
 	});
 	
-	var _Cart = __webpack_require__(340);
+	var _Cart = __webpack_require__(341);
 	
 	var _Cart2 = _interopRequireDefault(_Cart);
 
@@ -32979,7 +33067,7 @@
 	exports.default = _Cart2.default;
 
 /***/ }),
-/* 342 */
+/* 343 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33118,7 +33206,7 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 343 */
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33127,7 +33215,7 @@
 	  value: true
 	});
 	
-	var _Contact = __webpack_require__(342);
+	var _Contact = __webpack_require__(343);
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 
@@ -33136,7 +33224,7 @@
 	exports.default = _Contact2.default;
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33153,11 +33241,11 @@
 	
 	var _Header2 = _interopRequireDefault(_Header);
 	
-	var _GalleryHeader = __webpack_require__(345);
+	var _GalleryHeader = __webpack_require__(346);
 	
 	var _GalleryHeader2 = _interopRequireDefault(_GalleryHeader);
 	
-	var _GalleryImages = __webpack_require__(346);
+	var _GalleryImages = __webpack_require__(347);
 	
 	var _GalleryImages2 = _interopRequireDefault(_GalleryImages);
 	
@@ -33198,7 +33286,7 @@
 	exports.default = Gallery;
 
 /***/ }),
-/* 345 */
+/* 346 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33234,7 +33322,7 @@
 	exports.default = GalleryHeader;
 
 /***/ }),
-/* 346 */
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -33285,7 +33373,7 @@
 	exports.default = GalleryImages;
 
 /***/ }),
-/* 347 */
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33294,7 +33382,7 @@
 	  value: true
 	});
 	
-	var _Gallery = __webpack_require__(344);
+	var _Gallery = __webpack_require__(345);
 	
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -33303,7 +33391,7 @@
 	exports.default = _Gallery2.default;
 
 /***/ }),
-/* 348 */
+/* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33339,13 +33427,13 @@
 	exports.default = PaymentForm;
 
 /***/ }),
-/* 349 */
+/* 350 */
 /***/ (function(module, exports) {
 
 	"use strict";
 
 /***/ }),
-/* 350 */
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33358,15 +33446,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(351);
+	var _reactNumberFormat = __webpack_require__(352);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _PostHeader = __webpack_require__(352);
+	var _PostHeader = __webpack_require__(353);
 	
 	var _PostHeader2 = _interopRequireDefault(_PostHeader);
 	
-	var _PostBody = __webpack_require__(353);
+	var _PostBody = __webpack_require__(354);
 	
 	var _PostBody2 = _interopRequireDefault(_PostBody);
 	
@@ -33418,7 +33506,7 @@
 	exports.default = Post;
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34038,7 +34126,7 @@
 
 
 /***/ }),
-/* 352 */
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34085,7 +34173,7 @@
 	exports.default = PostBody;
 
 /***/ }),
-/* 353 */
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34122,7 +34210,7 @@
 	exports.default = PostBody;
 
 /***/ }),
-/* 354 */
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34131,7 +34219,7 @@
 	  value: true
 	});
 	
-	var _Post = __webpack_require__(350);
+	var _Post = __webpack_require__(351);
 	
 	var _Post2 = _interopRequireDefault(_Post);
 
@@ -34140,7 +34228,7 @@
 	exports.default = _Post2.default;
 
 /***/ }),
-/* 355 */
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34155,15 +34243,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(351);
+	var _reactNumberFormat = __webpack_require__(352);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _StoreContent = __webpack_require__(356);
+	var _StoreContent = __webpack_require__(357);
 	
 	var _StoreContent2 = _interopRequireDefault(_StoreContent);
 	
-	var _StoreCategories = __webpack_require__(357);
+	var _StoreCategories = __webpack_require__(358);
 	
 	var _StoreCategories2 = _interopRequireDefault(_StoreCategories);
 	
@@ -34241,7 +34329,7 @@
 	exports.default = Product;
 
 /***/ }),
-/* 356 */
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34311,7 +34399,7 @@
 	exports.default = StoreContent;
 
 /***/ }),
-/* 357 */
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34368,7 +34456,7 @@
 	exports.default = StoreCategories;
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34377,7 +34465,7 @@
 	  value: true
 	});
 	
-	var _Product = __webpack_require__(355);
+	var _Product = __webpack_require__(356);
 	
 	var _Product2 = _interopRequireDefault(_Product);
 
@@ -34386,7 +34474,7 @@
 	exports.default = _Product2.default;
 
 /***/ }),
-/* 359 */
+/* 360 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34443,7 +34531,7 @@
 	exports.default = ProductCategories;
 
 /***/ }),
-/* 360 */
+/* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -34495,7 +34583,7 @@
 	exports.default = ProductResult;
 
 /***/ }),
-/* 361 */
+/* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34508,15 +34596,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactNumberFormat = __webpack_require__(351);
+	var _reactNumberFormat = __webpack_require__(352);
 	
 	var _reactNumberFormat2 = _interopRequireDefault(_reactNumberFormat);
 	
-	var _ProductCategories = __webpack_require__(359);
+	var _ProductCategories = __webpack_require__(360);
 	
 	var _ProductCategories2 = _interopRequireDefault(_ProductCategories);
 	
-	var _StoreContent = __webpack_require__(362);
+	var _StoreContent = __webpack_require__(363);
 	
 	var _StoreContent2 = _interopRequireDefault(_StoreContent);
 	
@@ -34542,7 +34630,7 @@
 	exports.default = Products;
 
 /***/ }),
-/* 362 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34555,7 +34643,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _ProductResult = __webpack_require__(360);
+	var _ProductResult = __webpack_require__(361);
 	
 	var _ProductResult2 = _interopRequireDefault(_ProductResult);
 	
@@ -34591,7 +34679,7 @@
 	exports.default = StoreContent;
 
 /***/ }),
-/* 363 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34600,7 +34688,7 @@
 	  value: true
 	});
 	
-	var _Products = __webpack_require__(361);
+	var _Products = __webpack_require__(362);
 	
 	var _Products2 = _interopRequireDefault(_Products);
 
@@ -34609,7 +34697,7 @@
 	exports.default = _Products2.default;
 
 /***/ }),
-/* 364 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34639,7 +34727,7 @@
 	exports.default = Error404;
 
 /***/ }),
-/* 365 */
+/* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -34682,7 +34770,7 @@
 	exports.default = Error500;
 
 /***/ }),
-/* 366 */
+/* 367 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -34714,38 +34802,38 @@
 	}
 
 /***/ }),
-/* 367 */
+/* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./Blog/Blog": 330,
-		"./Blog/Blog.jsx": 330,
-		"./Blog/BlogCategories/BlogCategories": 338,
-		"./Blog/BlogCategories/BlogCategories.jsx": 338,
-		"./Blog/BlogCategories/index": 337,
-		"./Blog/BlogCategories/index.jsx": 337,
-		"./Blog/BlogContent/BlogContent": 332,
-		"./Blog/BlogContent/BlogContent.jsx": 332,
-		"./Blog/BlogContent/index": 331,
-		"./Blog/BlogContent/index.jsx": 331,
-		"./Blog/BlogPost/BlogPost": 334,
-		"./Blog/BlogPost/BlogPost.jsx": 334,
-		"./Blog/BlogPost/index": 333,
-		"./Blog/BlogPost/index.jsx": 333,
-		"./Blog/Pagination/Pagination": 336,
-		"./Blog/Pagination/Pagination.jsx": 336,
-		"./Blog/Pagination/index": 335,
-		"./Blog/Pagination/index.jsx": 335,
-		"./Blog/index": 339,
-		"./Blog/index.jsx": 339,
-		"./Cart/Cart": 340,
-		"./Cart/Cart.jsx": 340,
-		"./Cart/index": 341,
-		"./Cart/index.jsx": 341,
-		"./Contact/Contact": 342,
-		"./Contact/Contact.jsx": 342,
-		"./Contact/index": 343,
-		"./Contact/index.jsx": 343,
+		"./Blog/Blog": 331,
+		"./Blog/Blog.jsx": 331,
+		"./Blog/BlogCategories/BlogCategories": 339,
+		"./Blog/BlogCategories/BlogCategories.jsx": 339,
+		"./Blog/BlogCategories/index": 338,
+		"./Blog/BlogCategories/index.jsx": 338,
+		"./Blog/BlogContent/BlogContent": 333,
+		"./Blog/BlogContent/BlogContent.jsx": 333,
+		"./Blog/BlogContent/index": 332,
+		"./Blog/BlogContent/index.jsx": 332,
+		"./Blog/BlogPost/BlogPost": 335,
+		"./Blog/BlogPost/BlogPost.jsx": 335,
+		"./Blog/BlogPost/index": 334,
+		"./Blog/BlogPost/index.jsx": 334,
+		"./Blog/Pagination/Pagination": 337,
+		"./Blog/Pagination/Pagination.jsx": 337,
+		"./Blog/Pagination/index": 336,
+		"./Blog/Pagination/index.jsx": 336,
+		"./Blog/index": 340,
+		"./Blog/index.jsx": 340,
+		"./Cart/Cart": 341,
+		"./Cart/Cart.jsx": 341,
+		"./Cart/index": 342,
+		"./Cart/index.jsx": 342,
+		"./Contact/Contact": 343,
+		"./Contact/Contact.jsx": 343,
+		"./Contact/index": 344,
+		"./Contact/index.jsx": 344,
 		"./ContentBody/ContentBody": 319,
 		"./ContentBody/ContentBody.jsx": 319,
 		"./ContentBody/index": 318,
@@ -34754,14 +34842,14 @@
 		"./Footer/Footer.jsx": 321,
 		"./Footer/index": 320,
 		"./Footer/index.jsx": 320,
-		"./Gallery/Gallery": 344,
-		"./Gallery/Gallery.jsx": 344,
-		"./Gallery/GalleryHeader": 345,
-		"./Gallery/GalleryHeader.jsx": 345,
-		"./Gallery/GalleryImages": 346,
-		"./Gallery/GalleryImages.jsx": 346,
-		"./Gallery/index": 347,
-		"./Gallery/index.jsx": 347,
+		"./Gallery/Gallery": 345,
+		"./Gallery/Gallery.jsx": 345,
+		"./Gallery/GalleryHeader": 346,
+		"./Gallery/GalleryHeader.jsx": 346,
+		"./Gallery/GalleryImages": 347,
+		"./Gallery/GalleryImages.jsx": 347,
+		"./Gallery/index": 348,
+		"./Gallery/index.jsx": 348,
 		"./Head/Head": 327,
 		"./Head/Head.jsx": 327,
 		"./Head/index": 326,
@@ -34774,44 +34862,44 @@
 		"./Html/Html.jsx": 323,
 		"./Html/index": 322,
 		"./Html/index.jsx": 322,
-		"./Landing/Landing": 329,
-		"./Landing/Landing.jsx": 329,
-		"./Landing/index": 328,
-		"./Landing/index.jsx": 328,
+		"./Landing/Landing": 330,
+		"./Landing/Landing.jsx": 330,
+		"./Landing/index": 329,
+		"./Landing/index.jsx": 329,
 		"./Navigation/Navigation": 317,
 		"./Navigation/Navigation.jsx": 317,
 		"./Navigation/index": 316,
 		"./Navigation/index.jsx": 316,
-		"./PaymentForm/PaymentForm": 348,
-		"./PaymentForm/PaymentForm.jsx": 348,
-		"./PaymentForm/index": 349,
-		"./PaymentForm/index.jsx": 349,
-		"./Post/Post": 350,
-		"./Post/Post.jsx": 350,
-		"./Post/PostBody": 353,
-		"./Post/PostBody.jsx": 353,
-		"./Post/PostHeader": 352,
-		"./Post/PostHeader.jsx": 352,
-		"./Post/index": 354,
-		"./Post/index.jsx": 354,
-		"./Product/Product": 355,
-		"./Product/Product.jsx": 355,
-		"./Product/StoreCategories": 357,
-		"./Product/StoreCategories.jsx": 357,
-		"./Product/StoreContent": 356,
-		"./Product/StoreContent.jsx": 356,
-		"./Product/index": 358,
-		"./Product/index.jsx": 358,
-		"./Products/ProductCategories": 359,
-		"./Products/ProductCategories.jsx": 359,
-		"./Products/ProductResult": 360,
-		"./Products/ProductResult.jsx": 360,
-		"./Products/Products": 361,
-		"./Products/Products.jsx": 361,
-		"./Products/StoreContent": 362,
-		"./Products/StoreContent.jsx": 362,
-		"./Products/index": 363,
-		"./Products/index.jsx": 363,
+		"./PaymentForm/PaymentForm": 349,
+		"./PaymentForm/PaymentForm.jsx": 349,
+		"./PaymentForm/index": 350,
+		"./PaymentForm/index.jsx": 350,
+		"./Post/Post": 351,
+		"./Post/Post.jsx": 351,
+		"./Post/PostBody": 354,
+		"./Post/PostBody.jsx": 354,
+		"./Post/PostHeader": 353,
+		"./Post/PostHeader.jsx": 353,
+		"./Post/index": 355,
+		"./Post/index.jsx": 355,
+		"./Product/Product": 356,
+		"./Product/Product.jsx": 356,
+		"./Product/StoreCategories": 358,
+		"./Product/StoreCategories.jsx": 358,
+		"./Product/StoreContent": 357,
+		"./Product/StoreContent.jsx": 357,
+		"./Product/index": 359,
+		"./Product/index.jsx": 359,
+		"./Products/ProductCategories": 360,
+		"./Products/ProductCategories.jsx": 360,
+		"./Products/ProductResult": 361,
+		"./Products/ProductResult.jsx": 361,
+		"./Products/Products": 362,
+		"./Products/Products.jsx": 362,
+		"./Products/StoreContent": 363,
+		"./Products/StoreContent.jsx": 363,
+		"./Products/index": 364,
+		"./Products/index.jsx": 364,
 		"./Scripts/Scripts": 325,
 		"./Scripts/Scripts.jsx": 325,
 		"./Scripts/index": 324,
@@ -34828,7 +34916,7 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 367;
+	webpackContext.id = 368;
 
 
 /***/ })

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContentBody = (props) => {
   return (
-    <div id="body">
+    <section id="content-body-1" className="content-body">
       {
         //- NOTE:
         //- There is no .container wrapping className around body blocks to allow more flexibility in design.
@@ -12,7 +12,7 @@ const ContentBody = (props) => {
         //- The children block should contain the body of your template's content
         props.children
       }
-    </div>
+    </section>
   )
 }
 

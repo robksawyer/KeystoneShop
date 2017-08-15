@@ -34,6 +34,6 @@ exports = module.exports = function(req, res) {
 
 	});
 
-	view.render('Contact', locals);
+	view.render('Contact');
 
 };

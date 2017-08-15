@@ -19,7 +19,7 @@ var _ = require('underscore');
 */
 
 exports.initLocals = function(req, res, next) {
-	
+
 	res.locals.navLinks = [
 		{ label: 'Home',		key: 'home',		href: '/' },
 		{ label: 'Store',		key: 'store',	href: '/store' },

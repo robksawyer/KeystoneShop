@@ -3,16 +3,14 @@ import React from 'react';
 // Components
 import FlashMessages from '../../mixins/FlashMessages';
 import Header from '../../views/components/Header';
-import Navigation from '../../views/components/Navigation';
 import ContentBody from '../../views/components/ContentBody';
 import Footer from '../../views/components/Footer';
 
 const Default = (props) => {
+
 	return (
-		<div className="body">
-			<Header {...props}>
-				<Navigation {...props}></Navigation>
-			</Header>
+		<section id="body">
+			<Header navLinks={props.navLinks} section={props.section}></Header>
 			<ContentBody {...props}>
 				{
 	        //- The Intro block appears above flash messages (used for temporary information display)
@@ -28,8 +26,8 @@ const Default = (props) => {
 	        props.children
 	      }
 			</ContentBody>
-			<Footer {...props} />
-		</div>
+			<Footer {...props}></Footer>
+		</section>
 	);
 };
 

@@ -8,6 +8,9 @@ exports = module.exports = function(req, res) {
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
 	locals.section = 'cart';
+
+	locals.stripeApiKey = keystone.get('stripe publishable key');
+
 	locals.cartOptions = {
 		stripePublishableKey: keystone.get('stripe publishable key'),
 		defaultCountry: keystone.get('store country')
@@ -15,5 +18,4 @@ exports = module.exports = function(req, res) {
 
 	// Render the view
 	view.render('Cart');
-
 };

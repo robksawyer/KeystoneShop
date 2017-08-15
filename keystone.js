@@ -1,6 +1,6 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-if (process.env.NODE_ENV === 'local'){
+if (!process.env.NODE_ENV){
 	require('dotenv').load();
 }
 
@@ -30,7 +30,7 @@ let engine = renderer.server.create({
 // and documentation.
 
 // Setup the mongo database
-let mongo_url = process.env.MONGO_URI;
+let mongo_url = process.env.MONGO_URI || process.env.MONGODB_URI;
 if(process.env.NODE_ENV === 'local') {
 	if(process.env.USE_LIVE_DB === 'true') {
 		mongo_url = process.env.MONGO_URI;
