@@ -1,21 +1,18 @@
 import React, {Component} from 'react';
-// import loadScript from 'helpers/load-script';
+import {StripeProvider} from 'react-stripe-elements';
 
 export default class Cart extends Component {
 
   componentDidMount(props) {
-    // loadScript('//checkout.stripe.com/checkout.js', (window) => {
-    //   window.renderShoppingCart(document.getElementById('shopping-cart-container'))
-    // });
   }
 
   render(props) {
     return (
-      <div>
+      <StripeProvider apiKey={ props.stripeApiKey }>
         <div className="container no-padding">
           <div id="shopping-cart-container"></div>
         </div>
-      </div>
+      </StripeProvider>
     )
   }
 }

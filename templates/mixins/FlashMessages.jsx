@@ -3,7 +3,7 @@ import React from 'react';
 const FlashMessages = (props) => {
     // TODO: recreate this component
     return (
-        <div />
+        <div></div>
     );
 };
 

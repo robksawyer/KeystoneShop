@@ -1,16 +1,15 @@
 import React from 'react';
-import {StripeProvider} from 'react-stripe-elements';
 
-import Default from '../layouts/Default';
-import Landing from './components/Landing';
+// Components
+// import Default from '../layouts/Default';
+// import Landing from './components/Landing';
 
 const Index = (props) => {
   return (
-    <StripeProvider apiKey={ props.stripeApiKey }>
-      <Default props={props}>
-        <Landing props={props} />
-      </Default>
-    </StripeProvider>
+    <div>Hi!</div>
+    // <Default props={props}>
+    //   <Landing props={props} />
+    // </Default>
   )
 }
 

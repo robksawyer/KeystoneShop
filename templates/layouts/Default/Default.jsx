@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../views/components/Header';
-import Footer from '../views/components/Footer';
-import FlashMessages from '../mixins/FlashMessages';
+import Header from '../../views/components/Header';
+import Footer from '../../views/components/Footer';
+import FlashMessages from '../../mixins/FlashMessages';
 
 const Default = (props) => {
 	return (

@@ -1,17 +1,15 @@
-'use strict';
-
 import React from 'react';
 
-module.exports = React.createClass({
-  displayName: '500',
+const Error500 = (props) => {
+  return (
+    <div>
+      <h1>Internal Service Error (500)</h1>
+      <h3>Error message: {props.err.message}</h3>
+      <code>{props.err.stack}</code>
+    </div>
+  );
+}
 
-  render: function render() {
-    return (
-      <div>
-        <h1>Internal Service Error (500)</h1>
-        <h3>Error message: {this.props.err.message}</h3>
-        <code>{this.props.err.stack}</code>
-      </div>
-    );
-  }
-});
+Error500.displayName = 500;
+
+export default Error500;
