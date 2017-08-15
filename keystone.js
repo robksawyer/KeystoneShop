@@ -10,15 +10,25 @@ if (process.env.NODE_ENV === 'production'){
 }
 
 // Require keystone
-var keystone = require('keystone');
-var pkg = require('./package.json');
+let keystone = require('keystone');
+let pkg = require('./package.json');
+let renderer = require('react-engine');
+// let expressView = require('react-engine/lib/expressView');
+
+let engine = renderer.server.create({
+	performanceCollector: function(stats) {
+		console.log(stats);
+	},
+	// your options here
+});
+
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
 
 // Setup the mongo database
-var mongo_url = process.env.MONGO_URI;
+let mongo_url = process.env.MONGO_URI;
 if(process.env.NODE_ENV === 'local') {
 	if(process.env.USE_LIVE_DB === 'true') {
 		mongo_url = process.env.MONGO_URI;
@@ -35,11 +45,13 @@ keystone.init({
 	'stylus': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
-	'views': 'templates/views',
-	'view engine': 'pug',
+	'views': 'templates/views/components',
+	'view engine': 'jsx',
+	'custom engine': engine,
+	'view': renderer.expressView,
 
 	'emails': 'templates/emails',
-	// 'admin path': 'admin',
+	'admin path': 'admin',
 	'mongo': mongo_url,
 	// 'signin logo': ['/images/logo.svg', 120],
 
@@ -72,6 +84,9 @@ keystone.set('locals', {
 	editable: keystone.content.editable
 });
 
+// Load your project's Routes
+keystone.set('routes', require('./routes'));
+
 // Setup Store Gateway
 keystone.set('store gateway', 'stripe')
 // Setup Default Country
@@ -80,9 +95,6 @@ keystone.set('store country', 'US')
 // Setup Stripe keys
 keystone.set('stripe secret key', process.env.STRIPE_SECRET_KEY || 'STRIPE_SECRET_KEY')
 keystone.set('stripe publishable key', process.env.STRIPE_PUBLISHABLE_KEY || 'STRIPE_PUBLISHABLE_KEY')
-
-// Load your project's Routes
-keystone.set('routes', require('./routes'));
 
 // Configure the navigation bar in Keystone's Admin UI
 
