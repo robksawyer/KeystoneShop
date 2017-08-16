@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../Header';
 import GalleryHeader from './GalleryHeader';
 import GalleryImages from './GalleryImages';
 
@@ -8,7 +7,6 @@ const Gallery = (props) => {
 
   return (
     <div>
-      <Header props={props} />
       <div class="container padding-bottom no-padding">
         <h1>Gallery</h1>
         {

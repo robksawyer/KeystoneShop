@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {StripeProvider} from 'react-stripe-elements';
 
 // Components
-import App from './App.jsx';
-import Landing from './components/Landing';
+import App from './pages/App';
+import Landing from './pages/Landing';
 
 class Index extends Component {
 
@@ -13,7 +12,6 @@ class Index extends Component {
         <Landing {...this.props} />
       </App>
     );
-
   }
 }
 

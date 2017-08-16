@@ -1,6 +1,9 @@
 import React from 'react';
 
-const BlogCategories = (data) => {
+const BlogCategories = (props) => {
+
+  let {data} = props;
+
   return (
     <div className="categories">
       <h2>Categories</h2>
@@ -12,7 +15,7 @@ const BlogCategories = (data) => {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
 export default BlogCategories;

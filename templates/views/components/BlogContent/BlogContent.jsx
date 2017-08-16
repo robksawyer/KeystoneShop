@@ -2,11 +2,9 @@ import React from 'react';
 import BlogPost from '../BlogPost';
 import Pagination from '../Pagination';
 
-const BlogContent = (data) => {
-
-  console.log('In BlogContent...');
-  console.log(data);
-
+const BlogContent = (props) => {
+  console.log(props);
+  let {data} = props;
   return (
     <div className="blog-content">
       <h1>{data.category ? data.category.name : 'Blog'}</h1>
@@ -40,7 +38,7 @@ const BlogContent = (data) => {
       ]
     }
     </div>
-  )
+  );
 }
 
 export default BlogContent;

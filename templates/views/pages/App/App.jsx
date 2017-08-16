@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {StripeProvider} from 'react-stripe-elements';
 
 // Components
-import Default from '../layouts/Default';
-import Html from './components/Html';
+import Default from '../../../layouts/Default';
+import Html from '../../components/Html';
 
 class App extends Component {
 
@@ -21,6 +21,8 @@ class App extends Component {
    * @see https://stackoverflow.com/questions/41500135/react-js-stripe-checkout-is-not-working
    */
   loadPaymentProcessor(onload:Function) {
+    console.log("HERE");
+    console.log(window.StripeCheckout);
     if(! window.StripeCheckout) {
       const script = document.createElement('script');
       script.onload = function () {
@@ -35,6 +37,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log('componentDidMount()');
     this.loadPaymentProcessor(() => {
       this.setState({
         // Configure Stripe
@@ -55,8 +58,8 @@ class App extends Component {
   // }
 
   render(props) {
+    console.log('render()');
     const { paymentProcessorLoading, loading } = this.state;
-
     return (
       <Html>
         {
@@ -72,7 +75,8 @@ class App extends Component {
             // See https://github.com/stripe/react-stripe-elements/blob/7b18b38459c7e178d2c2255d3c277bb1ab1a3640/README.md#loading-stripejs-asynchronously
             <StripeProvider apiKey={ this.props.stripeApiKey }>
               <Default {...this.props}>
-                { this.props.children }
+                <p>HERE</p>
+                {/* {this.props.children} */}
               </Default>
             </StripeProvider>
           )
@@ -83,4 +87,4 @@ class App extends Component {
   }
 }
 
-export default App;
+module.exports = App;
