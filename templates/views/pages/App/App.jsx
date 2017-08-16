@@ -59,6 +59,7 @@ class App extends Component {
 
   render(props) {
     console.log('render()');
+    console.log(this.props);
     const { paymentProcessorLoading, loading } = this.state;
     return (
       <Html>
@@ -75,8 +76,7 @@ class App extends Component {
             // See https://github.com/stripe/react-stripe-elements/blob/7b18b38459c7e178d2c2255d3c277bb1ab1a3640/README.md#loading-stripejs-asynchronously
             <StripeProvider apiKey={ this.props.stripeApiKey }>
               <Default {...this.props}>
-                <p>HERE</p>
-                {/* {this.props.children} */}
+                {this.props.children}
               </Default>
             </StripeProvider>
           )
