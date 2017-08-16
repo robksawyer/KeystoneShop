@@ -34,6 +34,8 @@ node_modules
 public/vendors
 *.pem
 yarn.lock
+public/js/bundle.js
+public/js/bundle.js.map
 
 # Design files
 _design

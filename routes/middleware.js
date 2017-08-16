@@ -28,6 +28,9 @@ exports.initLocals = function(req, res, next) {
 		{ label: 'Contact',		key: 'contact',		href: '/contact' },
 	];
 
+	// Add the payment processor publishable key
+	res.locals.stripeApiKey = process.env.STRIPE_PUBLISHABLE_KEY;
+
 	// locals.user = req.user;
 	if (req.user) {
 		res.locals.user = {
@@ -36,6 +39,32 @@ exports.initLocals = function(req, res, next) {
 		};
 	}
 	next();
+};
+
+
+/**
+ * Handles redirects and route not found errors on the server side 
+ * @see https://github.com/paypal/react-engine#handling-redirects-and-route-not-found-errors-on-the-server-side
+ */
+exports.errors = function(err, req, res, next) {
+  console.error(err);
+
+  // http://expressjs.com/en/guide/error-handling.html
+  if (res.headersSent) {
+    return next(err);
+  }
+
+  if (err._type && err._type === ReactEngine.reactRouterServerErrors.MATCH_REDIRECT) {
+    return res.redirect(302, err.redirectLocation);
+  }
+  else if (err._type && err._type === ReactEngine.reactRouterServerErrors.MATCH_NOT_FOUND) {
+    return res.status(404).send('Route Not Found!');
+  }
+  else {
+    // for ReactEngine.reactRouterServerErrors.MATCH_INTERNAL_ERROR or
+    // any other error we just send the error message back
+    return res.status(500).send(err.message);
+  }
 };
 
 

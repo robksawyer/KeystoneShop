@@ -47,7 +47,7 @@ keystone.init({
 	'stylus': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
-	'views': 'templates/views/components',
+	'views': 'templates/views',
 	'view engine': 'jsx',
 	'custom engine': engine,
 	'view': renderer.expressView,
