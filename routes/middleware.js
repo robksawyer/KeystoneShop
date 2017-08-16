@@ -9,6 +9,8 @@
  */
 
 var _ = require('underscore');
+var ReactEngine = require('react-engine');
+var keystone = require('keystone');
 
 /**
 	Initialises the standard view locals
@@ -43,28 +45,27 @@ exports.initLocals = function(req, res, next) {
 
 
 /**
- * Handles redirects and route not found errors on the server side 
- * @see https://github.com/paypal/react-engine#handling-redirects-and-route-not-found-errors-on-the-server-side
+ * Inits the error handler functions into `res`
+ * @see http://keystonejs.com/docs/getting-started/#routesviews-middleware
  */
-exports.errors = function(err, req, res, next) {
-  console.error(err);
+exports.initErrorHandlers = function(req, res, next) {
 
-  // http://expressjs.com/en/guide/error-handling.html
-  if (res.headersSent) {
-    return next(err);
-  }
+	res.err = function(err, title, message) {
+	  res.status(500).render('errors/500', {
+      err: err,
+      errorTitle: title,
+      errorMsg: message
+	  });
+	}
 
-  if (err._type && err._type === ReactEngine.reactRouterServerErrors.MATCH_REDIRECT) {
-    return res.redirect(302, err.redirectLocation);
-  }
-  else if (err._type && err._type === ReactEngine.reactRouterServerErrors.MATCH_NOT_FOUND) {
-    return res.status(404).send('Route Not Found!');
-  }
-  else {
-    // for ReactEngine.reactRouterServerErrors.MATCH_INTERNAL_ERROR or
-    // any other error we just send the error message back
-    return res.status(500).send(err.message);
-  }
+	res.notfound = function(title, message) {
+	  res.status(404).render('errors/404', {
+      errorTitle: title,
+      errorMsg: message
+	  });
+	}
+
+	next();
 };
 
 
