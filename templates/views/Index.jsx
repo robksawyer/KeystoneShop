@@ -1,15 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { Switch } from 'react-router-dom';
 
 // Components
 import App from './pages/App';
-import Landing from './pages/Landing';
+
+import { routes } from './routes'
 
 class Index extends Component {
 
   render(props) {
     return (
       <App {...this.props}>
-        <Landing {...this.props} />
+        <Switch>
+          {routes.map(route => (
+            <Route {...route}/>
+          ))}
+        </Switch>
       </App>
     );
   }

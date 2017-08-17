@@ -30,6 +30,8 @@
     "react-dom": "^15.6.1",
     "react-engine": "^4.3.0",
     "react-number-format": "^2.0.3",
+    "react-router": "^4.1.2",
+    "react-router-dom": "^4.1.2",
     "react-stripe-elements": "^0.0.7",
     "stripe": "^4.24.0",
     "stylus": "^0.54.5",
